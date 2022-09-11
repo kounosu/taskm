@@ -1,38 +1,401 @@
 <!doctype html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorate="~{layouts/common}">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
-<section layout:fragment="content">
-	<div class="col-lg-8 offset-lg-2 text-center">
-		<h1>Spring Boot with Thymeleaf and</h1>
-		<h1>Laravel Mix</h1>
-		<p style="text-align: center">
-			<button class="mt-2 btn btn-primary" autofocus>+ 新しいタスクを追加</button>
+<head>
+	<meta charset="UTF-8">
+	<title>TaskTime</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+
+	<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+
+
+
+
+	<!-- JavaScriptのライブラリFullCalendar -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/gcal.js">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/gcal.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/gcal.min.js">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/gcal.min.js"></script> -->
+
+
+
+
+
+</head>
+
+<body>
+	<!-- ナビゲーションバー -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<a class="navbar-brand text-dark" th:href="@{/app/top}"><strong>TaskTime</strong></a>
+			<!-- トグルボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link fas fa-home" th:href="@{/app/top}">Top</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fas fa-book-open" th:href="@{/app/today}">Today</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fas fa-check" th:href="@{/app/done}">Done</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+
+
+	<!-- GoogleCalendarテスト
+		<form th:action="@{/app/test}" method="post">
+			<input type="submit" value="test" />
+		</form> -->
+		
+		
+		<div class="container-lg">
+			
+
+		<!-- タスク追加ボタン -->
+		<p style="text-align:center">
+			<a th:href="@{/app/new}"><button class="mt-2 btn btn-primary" autofocus>+ 新しいタスクを追加</button></a>
 		</p>
-	</div>
-	<div class="row">
-		<div class="col-lg-6 offset-lg-3">
-			<iframe
-				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=a291bm9zdTE3NzEwMzZAZ21haWwuY29t&src=ZmFtaWx5MDI5Njg4MjMyMDA0Nzk1MTQ4MjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23616161&color=%2333B679"
-				style="border: solid 1px #777" width="800" height="600"
-				frameborder="0" scrolling="no"></iframe>
-		</div>
+
+
+		<!-- タスクが無い時 -->
 		<div th:if="!${task.size()}">
-			<h4 style="text-align: center;">
-				タスクはありません<i class="fas fa-umbrella-beach"></i>
-			</h4>
+			<h4 style="text-align: center;">タスクはありません<i class="fas fa-umbrella-beach"></i></h4>
 		</div>
+
+
+		<!-- タスクがある時 -->
+		<div th:if="${task.size()}" class="task-table">
+
+			<!-- sort dropdown -->
+			<!-- sort = dateの時 -->
+			<div th:if="${#strings.contains(sort, 'date')}">
+				<a class="btn btn-primary btn-sm dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">予定日順</a>
+
+				<div class="dropdown-menu">
+					<div class="dropdown-item">
+						<form method="POST" th:action="@{/app/top/priority}" class="text-left">
+							<button class="btn btn-link btn-sm">優先度順</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- sort = priorityの時 -->
+			<div th:if="${#strings.contains(sort, 'priority')}">
+				<a class="btn btn-primary btn-sm dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">優先度順</a>
+
+				<div class="dropdown-menu">
+					<div class="dropdown-item">
+						<form method="POST" th:action="@{/app/top/date}">
+							<button class="btn btn-link btn-sm">予定日順</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- sort dropdown終わり -->
+
+
+
+			<!-- タスク一覧テーブル表示 -->
+			<table class="table table-sm">
+				<thead>
+					<tr class="table-light">
+						<th class="font-weight-bold text-center">タスク一覧</th>
+						<th style="text-align: center;">見積時間(h)</th>
+						<th style="text-align: center;">優先度</th>
+						<th style="text-align: center;">予定日</th>
+						<th style="text-align: center;">開始時刻</th>
+						<th style="text-align: center;">カレンダー</th>
+						<th style="text-align: center;">完了</th>
+						<th style="text-align: center;">編集</th>
+						<th style="text-align: center;" class="text-dark">削除</th>
+					</tr>
+				</thead>
+
+				<tbody th:each="task:${task}" th:object="${task}">
+
+					<!-- 予定日が超過している場合は背景赤 -->
+					<tr th:if="${today gt task.scheduledDate}" style="background-color:pink;">
+
+						<td th:text="*{taskName}" class="text-center font-weight-bold align-middle"></td>
+
+						<td th:text="*{estimatedTime}" class="text-center align-middle"></td>
+
+						<td th:text="*{priority}" class="text-center align-middle"></td>
+
+						<td th:switch="*{scheduledDate}" class="text-center align-middle">
+							<span th:case="${today}" class="text-danger font-weight-bold"
+								th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+							<span th:case="${tomorrow}" class="font-weight-bold"
+								th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+							<span th:case=* th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+						</td>
+
+						<td th:text="*{startTime}" class="text-center align-middle"></td>
+
+						<td class="text-center">
+							<div class="tooltip1">
+								<form th:action="@{/app/event/{taskID} (taskID=*{taskID}) }" method="POST"
+									onsubmit="checkAdd()">
+									<button type="submit" class="btn btn-info btn-sm far fa-plus-square"></button>
+								</form>
+								<div class="description1">Googleカレンダーに予定追加</div>
+							</div>
+						</td>
+
+						<td style="text-align: center;">
+							<div class="tooltip2">
+								<form method="POST" th:action="@{/app/doneTop/{taskID} (taskID=*{taskID}) }">
+									<button class="btn btn-success btn-sm far fa-check-circle"></button>
+								</form>
+								<div class="description2">お疲れさまです<i class="fas fa-check"></i></div>
+							</div>
+						</td>
+
+						<td style="text-align: center;">
+							<a th:href="@{/app/edit/{taskID} (taskID=*{taskID}) }">
+								<button type="button" class="btn btn-blue-grey btn-sm fas fa-edit"></button></a>
+						</td>
+
+						<td style="text-align: center;">
+							<form method="POST" th:action="@{/app/deleteTop/{taskID} (taskID=*{taskID}) }"
+								onsubmit="checkDelete()">
+								<button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
+							</form>
+						</td>
+
+					</tr>
+
+					<!-- 予定日が超過していない場合は背景そのまま -->
+					<tr th:if="!${today gt task.scheduledDate}">
+
+						<td th:text="*{taskName}" class="text-center font-weight-bold align-middle"></td>
+
+						<td th:text="*{estimatedTime}" class="text-center align-middle"></td>
+
+						<td th:text="*{priority}" class="text-center align-middle"></td>
+
+						<td th:switch="*{scheduledDate}" class="text-center align-middle">
+							<span th:case="${today}" class="text-danger font-weight-bold"
+								th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+							<span th:case="${tomorrow}" class="font-weight-bold"
+								th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+							<span th:case=* th:text="*{#strings.replace(scheduledDate, '-', '/')}"></span>
+						</td>
+
+						<td th:text="*{startTime}" class="text-center align-middle"></td>
+
+						<td class="text-center">
+							<div class="tooltip1">
+								<form method="POST" th:action="@{/app/event/{taskID} (taskID=*{taskID}) }"
+									onsubmit="checkAdd()">
+									<button type="submit" class="btn btn-info btn-sm far fa-plus-square"></button>
+								</form>
+								<div class="description1">Googleカレンダーに予定追加</div>
+							</div>
+						</td>
+
+						<td style="text-align: center;">
+							<div class="tooltip2">
+								<form method="POST" th:action="@{/app/doneTop/{taskID} (taskID=*{taskID}) }">
+									<button class="btn btn-success btn-sm far fa-check-circle"></button>
+								</form>
+								<div class="description2">お疲れさまです<i class="fas fa-check"></i></div>
+							</div>
+						</td>
+
+						<td style="text-align: center;">
+							<a th:href="@{/app/edit/{taskID} (taskID=*{taskID}) }">
+								<button type="button" class="btn btn-blue-grey btn-sm fas fa-edit"></button></a>
+						</td>
+
+						<td style="text-align: center;">
+							<form method="POST" th:action="@{/app/deleteTop/{taskID} (taskID=*{taskID}) }"
+								onsubmit="checkDelete()">
+								<button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
+							</form>
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+
+		<table class="mt-5 table table-sm">
+
+			<thead class="text-center">
+				<th class="font-weight-bold">今週のタスク状況</th>
+				<div th:each="week:${week}" th:switch="${week}">
+					<td th:case="${todayofweek}" class="text-center">
+						<span class="text-danger font-weight-bold" th:text="${week}"></span>
+					</td>
+					<td th:case="${tomorrowofweek}" class="text-center">
+						<span class="font-weight-bold" th:text="${week}"></span>
+					</td>
+					<td th:case=* class="text-center"><span th:text="${week}"></span></td>
+				</div>
+			</thead>
+
+			<tbody>
+				<td style="text-align: center;">見積時間(h)</td>
+				<div th:each="weekEstimatedTime:${weekEstimatedTime}">
+					<td style="text-align: center;">
+						<p th:text="${weekEstimatedTime}" th:if="!${#strings.equals(weekEstimatedTime, '0.0')}">
+						</p>
+					</td>
+				</div>
+			</tbody>
+
+		</table>
+
+
+
+
+
+		<div class="container-lg text-center">
+			<span class="small" th:text="${userID}"></span><span class="small">さんのGoogleカレンダーを表示しています</span><br>
+			<iframe th:src="|https://calendar.google.com/calendar/
+				embed?
+
+				src=${userID}
+				
+				&ctz=Asia%2FTokyo&amp;
+				height=600&amp;
+				wkst=2&amp;
+				bgcolor=%23ffffff&amp;
+				width=800&amp;
+				height=600&amp;
+				frameborder=0&amp;
+				scrolling=no&amp;
+				mode=WEEK&amp;
+				showTitle=0&amp;
+				showCalendars=0&amp;
+				showTabs=0&amp;
+				showPrint=0&amp;
+				showDate=0&amp;|" style="border:solid 1px #777" width="800" height="500" frameborder="0">
+			</iframe>
+		</div>
+
 	</div>
-	<hr />
 
-</section>
+	<!-- ログアウトボタン -->
+	<form class="text-center my-5" th:action="@{/logout}" method="post">
+		<button type="submit" class="btn btn-outline-danger waves-effect">ログアウト <i
+				class="fas fa-sign-out-alt"></i></button>
+	</form>
 
-<section layout:fragment="js">
+	<!-- データ完全削除ボタン -->
+	<form class="text-right" method="POST" th:action="@{/app/deleteAll/{userID} (userID=${userID}) }"
+		onsubmit="checkDeleteAll()">
+		<button type="submit" class="btn btn-link btn-sm">ログイン中のユーザーの全ての情報を削除</button>
+	</form>
+
+
+
+
+	<!-- JavaScript -->
 	<script>
-  $(function() {
-    $("button").on("click", function() {
-      $("p").slideToggle();
-    });
-  });
-  </script>
-</section>
+		//Calendarに予定追加時のダイアログ
+		function checkAdd() {
+			if (window.confirm('以下の要素からGoogleカレンダーに予定を追加してよろしいですか？\n・見積時間\n・予定日\n・開始時刻')) {
+				return true;
+			} else {
+				return false; // 送信を中止
+			}
+		}
+		//Delete時のダイアログ
+		function checkDelete() {
+			if (window.confirm('タスクを削除してよろしいですか？')) {
+				return true; // 「OK」時は送信を実行
+			} else {
+				return false; // 送信を中止
+			}
+		}
+		//DeleteAll時のダイアログ
+		function checkDeleteAll() {
+			if (window.confirm('ログイン中のユーザーの以下の情報を削除してよろしいですか？\n・タスク情報\n・ユーザー情報\n※復元することはできません')) {
+				return true; // 「OK」時は送信を実行
+			} else {
+				return false; // 送信を中止
+			}
+		}
+
+		// FullCalender
+		// document.addEventListener('DOMContentLoaded', function() {
+		// 	var calendarEl = document.getElementById('calendar');
+		// 	var calendar = new FullCalendar.Calendar(calendarEl, {
+		// 		plugins: [ 'interaction', 'dayGrid', 'list', 'googleCalendar'],
+		// 		locale: 'ja',
+		// 		header: {
+		// 			left: 'prev,next today',
+		// 			center: 'title',
+		// 			right: 'dayGridMonth,timeGridWeek,dayGridWeek,listYear'
+		// 		},
+		// 		displayEventTime: false, 
+		// 		googleCalendarApiKey: 'AIzaSyBcq8f_ZN26zDUrUvkykq1TGuc1Z77x9aU',
+		// 		events: 'hhujk5@gmail.com',
+		// 	});
+		// 	calendar.render();
+		// });
+
+
+
+	</script>
+
+
+
+
+	<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+
+</body>
+
+</html>

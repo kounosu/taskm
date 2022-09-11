@@ -9,5 +9,6 @@ public class SpringMixApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringMixApplication.class, args);
 	}
-
+	
 }
+
