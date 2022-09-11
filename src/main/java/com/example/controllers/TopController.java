@@ -6,7 +6,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.scheduling.config.Task;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
@@ -16,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.model.Task;
 import com.example.service.TaskService;
 import com.example.service.UserService;
 
@@ -40,9 +40,8 @@ public class TopController {
 		);
 	}
 	
-    
-    	
-    	@GetMapping("/")
+	
+    	@GetMapping("/top")
 		public String index(@AuthenticationPrincipal OAuth2User oauth2User, OAuth2AuthenticationToken authentication, Model model) {
 			
 			//ログイン中のユーザーのメールアドレスをuserIDとして取得

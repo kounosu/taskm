@@ -2,19 +2,21 @@ package com.example.service;
 
 import java.util.List;
 
-import org.springframework.scheduling.config.Task;
-import org.springframework.stereotype.Service;
-
-import com.example.repository.TaskMapper;
+import com.example.model.Task;
 // import java.util.List;
+import com.example.repository.TaskMapper;
+
+import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor//final fieldのコンストラクタを自動的に生成してくれる
 public class TaskService {
+
     //@RequiredArgsConstructorによりコンストラクタインジェクション
-    TaskMapper mapper;
+    private final TaskMapper mapper;
+
 
     //select全件
     public List<Task> selectAllTasks() {
@@ -28,12 +30,12 @@ public class TaskService {
 
     //select undone 優先度順
     public List<Task> selectUndoneTasksByPriority(String userID) {
-        return mapper.selectUndoneTasks(userID);
+        return mapper.selectUndoneTasksByPriority(userID);
     }
 
     //select Doneのみ
     public List<Task> selectDoneTasks(String userID) {
-        return mapper.selectUndoneTasks(userID);
+        return mapper.selectDoneTasks(userID);
     }
 
     //select todayのみ
@@ -63,7 +65,7 @@ public class TaskService {
 
     //タスク未完了状態へundone
     public void undone(int taskID) {
-        mapper.done(taskID);
+        mapper.undone(taskID);
     }
 
     //delete処理
@@ -77,3 +79,6 @@ public class TaskService {
     }
 
 }
+
+
+

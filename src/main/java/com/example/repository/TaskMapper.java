@@ -8,7 +8,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import org.springframework.scheduling.config.Task;
+
+import com.example.model.Task;
+
 
 @Mapper
 public interface TaskMapper {
@@ -144,9 +146,3 @@ public interface TaskMapper {
 
 
 }
-
-
-
-
-
-
