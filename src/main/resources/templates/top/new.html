@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TaskTime</title>
+
+<!-- CSS -->
+<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+	rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- ナビゲーションバー -->
+	<header>
+		<div class="col-lg-8 offset-lg-2 text-center">
+			<a class="navbar-brand text-dark" th:href="@{/top/index}"><strong>TaskTime</strong></a>
+			<!-- トグルボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link fas fa-home"
+						th:href="@{/top/index}">Top</a></li>
+
+					<li class="nav-item"><a class="nav-link fas fa-book-open"
+						th:href="@{/app/today}">Today</a></li>
+
+					<li class="nav-item"><a class="nav-link fas fa-check"
+						th:href="@{/app/done}">Done</a></li>
+
+				</ul>
+			</div>
+
+		</div>
+	</header>
+
+</body>
+</html>

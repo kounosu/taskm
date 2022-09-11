@@ -1,51 +1,34 @@
 <!doctype html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/common}">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/common}">
 
-  <section layout:fragment="content">
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <h1>Spring Boot with Thymeleaf and </h1><h1>Laravel Mix</h1>
-      <p class="lead">
-        JavaのWebアプリ開発を以下の構成で楽しむサンプルです。<br/>
-         <a href="https://it-jog.com/java/springboot/startsbhello" target="_blank" rel="noopener noreferrer">Spring Boot(Maven)</a><br/>
-        <a href="https://qiita.com/opengl-8080/items/eb3bf3b5301bae398cc2" target="_blank" rel="noopener noreferrer">Thymeleaf Template Engine</a><br/>
-        <a href="https://qiita.com/ha6_6ru/items/d78d8294dba923792d6a" target="_blank" rel="noopener noreferrer">Node・npm(Windows)</a>　
-        <a href="https://photo-tea.com/p/17/hexo-start-kit-tools-4/" target="_blank" rel="noopener noreferrer">Node・npm(Mac)</a><br/>
-        <a href="https://www.mitsue.co.jp/knowledge/blog/frontend/201912/05_0000.html" target="_blank" rel="noopener noreferrer">Webpack</a><br/>
-        <a href="https://reffect.co.jp/laravel/first-laravel-mix" target="_blank" rel="noopener noreferrer">Laravel Mix</a><br/>
-        <a href="https://webdesignday.jp/inspiration/technique/css/5819/" target="_blank" rel="noopener noreferrer">Sass</a><br/>
-        <a href="https://v4.bootstrap-guide.com/" target="_blank" rel="noopener noreferrer">Bootstrap 4</a><br/>
-        <a href="https://snome.jp/programming/jquery1/" target="_blank" rel="noopener noreferrer">jQuery</a><br/>
-        <a href="https://jp.vuejs.org/v2/guide/index.html" target="_blank" rel="noopener noreferrer">Vue</a><br/>
-        <a href="https://qiita.com/riversun/items/4faa56ac40071f638313" target="_blank" rel="noopener noreferrer">Font Awesome</a><br/><br/>
-        
-        <a href="https://github.com/MutsumiMatsuda/springmix" target="_blank" rel="noopener noreferrer">GitHubはこちらです。導入法はReadMe.mdをご覧下さい</a>
-        
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3">
-        <button class="button">リンク表示/非表示</button>　←jQueryの動作確認用ボタンです
-      </div>
-    </div>
-    <hr/>
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3" id="star">
-        <star-rating v-model="rating"></star-rating>　↑Vueのコンポーネントで評価用の★を表示してみました
-      </div>
-    </div>
-    <hr/>
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3">
-        <i class="fas fa-dog fa-3x"></i>
-        <i class="far fa-comments fa-3x"></i>
-        <i class="fas fa-cat fa-3x fa-flip-horizontal"></i>　←Font Awesomeのアイコンです
-      </div>
-    </div>
-    <hr/>
-  </section>
-  
+<section layout:fragment="content">
+	<div class="col-lg-8 offset-lg-2 text-center">
+		<h1>Spring Boot with Thymeleaf and</h1>
+		<h1>Laravel Mix</h1>
+		<p style="text-align: center">
+			<button class="mt-2 btn btn-primary" autofocus>+ 新しいタスクを追加</button>
+		</p>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 offset-lg-3">
+			<iframe
+				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=a291bm9zdTE3NzEwMzZAZ21haWwuY29t&src=ZmFtaWx5MDI5Njg4MjMyMDA0Nzk1MTQ4MjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23616161&color=%2333B679"
+				style="border: solid 1px #777" width="800" height="600"
+				frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div th:if="!${task.size()}">
+			<h4 style="text-align: center;">
+				タスクはありません<i class="fas fa-umbrella-beach"></i>
+			</h4>
+		</div>
+	</div>
+	<hr />
+
+</section>
+
 <section layout:fragment="js">
-  <script>
+	<script>
   $(function() {
     $("button").on("click", function() {
       $("p").slideToggle();

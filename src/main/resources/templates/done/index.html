@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TaskTime</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<a class="navbar-brand text-dark" th:href="@{/top/index}"><strong>TaskTime</strong></a>
+			<!-- トグルボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link fas fa-home" th:href="@{/top/index}">Top</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fas fa-book-open" th:href="@{/today/index}">Today</a>
+					</li>
+
+					<li class="nav-item active">
+						<a class="nav-link fas fa-check" th:href="@{/done/index}">Done</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+    <div class="container-lg">
+
+        
+        <table class="table table-sm mt-5">
+            <thead>
+                <tr>
+                    <th class="font-weight-bold text-center">完了済みタスク</th>
+                    <th style="text-align: center;">見積時間(h)</th>
+                    <th style="text-align: center;">完了日</th>
+                    <th style="text-align: center;">未完了に戻す</th>
+                    <th style="text-align: center;">完全に削除</th>
+                </tr>
+            </thead>
+
+            <tbody th:each="task:${task}" th:object="${task}">
+                <tr>
+                    <td class="text-center align-middle" th:text="*{taskName}"></td>
+                    <td class="text-center align-middle" th:text="*{estimatedTime}"></td>
+                    <td class="text-center align-middle" th:text="*{completionDate}"></td>
+                    <td style="text-align: center;">
+                        <form method="POST" th:action="@{/app/undone/{taskID} (taskID=*{taskID}) }">
+                            <button class="btn btn-success btn-sm far fa-check-circle"></button>
+                        </form>
+                    </td>
+                    <td style="text-align: center;">
+                        <form method="POST" th:action="@{/app/deleteDone/{taskID} (taskID=*{taskID}) }" onsubmit="return checkDelete()">
+                            <button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script>
+        //Delete時のダイアログ
+		function checkDelete() {
+			if(window.confirm('タスクを削除してよろしいですか？')){
+				return true; // 「OK」時は送信を実行
+			} else {
+				return false; // 送信を中止
+			}
+		}
+    </script>
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+</html>

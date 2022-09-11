@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TaskTime</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-lg">
+        <h2 class="p">エラーが発生しました<i class="far fa-dizzy"></i></h2>
+
+        <a th:href="@{/top/index}"><button class="btn btn-outline-primary">Topへ戻る</button></a><br>
+
+        <p class="mt-5 mb-0">
+            Googleカレンダーに予定追加時にこのエラーページが表示される場合は<br>
+            アクセストークンがうまく取得できていない可能性があります。<br>
+            恐れ入りますが再ログインしてください。</p>
+        <form th:action="@{/logout}" method="post">
+            <input class="btn btn-outline-danger" type="submit" value="ログインに戻る" />
+        </form>
+
+        <div class="small mt-5">
+            <p>以下、管理者用メッセージ<br>
+                エラー状況は下記の通りです。<br>
+                status:<span th:text="${status}"></span><br>
+                error:<span th:text="${error}"></span><br>
+                message:<span th:text="${message}"></span></p>
+        </div>
+
+    </div>
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</body>
+</html>

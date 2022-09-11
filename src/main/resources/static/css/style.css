@@ -1,0 +1,98 @@
+/* タスク一覧テーブル スクロール表示用 */
+.task-table {
+	overflow-y: scroll;
+	height: 30vw;
+	/* width: auto; */
+	resize: vertical;
+}
+
+.task-table thead th {
+	background-color: #fff;
+	/* 縦スクロール時に固定する */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/* tbody内のセルより手前に表示する */
+	z-index: 2;
+}
+
+/* タスク一覧のGoogleCalendarに予定追加ボタンにマウスオーバー時の説明書き用 */
+.tooltip1 {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+/* 吹き出し部分 */
+.description1 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #00BFFF;
+	width: 130px;
+	/* z-index指定でdoneボタンより前に表示 */
+	z-index: 1;
+}
+/* 矢印部分 */
+.description1:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 95%;
+	border: 15px solid transparent;
+	border-top: 15px solid #00BFFF;
+	margin-left: 0px;
+	transform: rotateZ(90deg);
+}
+
+.tooltip1:hover .description1 {
+	display: inline-block;
+	top: 0px;
+	left: 80px;
+}
+
+/* タスク一覧のGoogleCalendarに予定追加ボタンにマウスオーバー時の説明書き用 */
+.tooltip2 {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+/* 吹き出し部分 */
+.description2 {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #fff;
+	border-radius: 5px;
+	background: #32CD32;
+	width: 140px;
+	/* z-index指定でdoneボタンより前に表示 */
+	z-index: 1;
+}
+/* 矢印部分 */
+.description2:before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	right: 95%;
+	border: 15px solid transparent;
+	border-top: 15px solid #32CD32;
+	margin-left: -15px;
+	transform: rotateZ(90deg);
+}
+
+.tooltip2:hover .description2 {
+	display: inline-block;
+	top: 0px;
+	left: 80px;
+}
+
+/* GoogleCalendar表示説明テキスト用 */
+.small {
+	font-size: small;
+}
