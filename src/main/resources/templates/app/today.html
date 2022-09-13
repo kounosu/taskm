@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TaskTime</title>
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<a class="navbar-brand text-dark" th:href="@{/app/top}"><strong>TaskTime</strong></a>
+			<!-- トグルボタン -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link fas fa-home" th:href="@{/app/top}">Top</a>
+					</li>
+
+					<li class="nav-item font-weight-bold active">
+						<a class="nav-link fas fa-book-open" th:href="@{/app/today}">Today</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link fas fa-check" th:href="@{/app/done}">Done</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+
+    <div class="container-lg">
+
+        <p style="text-align:center">
+			<a th:href="@{/app/new}"><button class="mt-2 btn btn-primary">+ 新しいタスクを追加</button></a>
+		</p>
+
+
+        <!-- taskが無い時 -->
+        <div th:if="!${task.size()}">
+            <h4 style="text-align: center;">タスクはありません<i class="fas fa-umbrella-beach"></i></h4>
+        </div>
+
+        <!-- タスクがある時 -->
+        <div th:if="${task.size()}" class="task-table">
+
+            
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th class="font-weight-bold text-center">今日のタスク</th>
+                        <th style="text-align: center;">見積時間(h)</th>
+                        <th style="text-align: center;">開始時刻</th>
+                        <th style="text-align: center;">完了</th>
+                        <th style="text-align: center;">編集</th>
+                        <th style="text-align: center;">優先度</th>
+                    </tr>
+                </thead>
+
+                <tbody th:each="task:${task}" th:object="${task}">
+                    <tr>
+                        <td th:text="*{taskName}" class="text-center align-middle font-weight-bold"></td>
+                        <td th:text="*{estimatedTime}" class="text-center align-middle"></td>
+                        <td th:text="*{startTime}" class="text-center align-middle"></td>
+                        
+                        <td style="text-align: center;">
+                            <form method="POST" th:action="@{/app/doneToday/{taskID} (taskID=*{taskID}) }"><button
+                                    class="btn btn-success btn-sm far fa-check-circle"></button></form>
+                        </td>
+
+                        <td style="text-align: center;">
+                            <a th:href="@{/app/edit/{taskID} (taskID=*{taskID}) }">
+                                <button type="button"class="btn btn-blue-grey btn-sm fas fa-edit"></button></a></td>
+                        
+                        <td class="text-center align-middle" th:text="*{priority}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+		<div class="container-lg text-center">
+            <span class="small" th:text="${userID}"></span><span class="small">さんのGoogleカレンダーを表示しています</span><br>
+			<iframe th:src="|https://calendar.google.com/calendar/
+				embed?
+
+				src=${userID}
+				
+				&ctz=Asia%2FTokyo&amp;
+				height=600&amp;
+				wkst=2&amp;
+				bgcolor=%23ffffff&amp;
+				width=800&amp;
+				height=600&amp;
+				frameborder=0&amp;
+				scrolling=no&amp;
+				mode=WEEK&amp;
+				showTitle=0&amp;
+				showCalendars=0&amp;
+				showTabs=0&amp;
+				showPrint=0&amp;
+				showDate=0&amp;|" style="border:solid 1px #777" width="800" height="500" frameborder="0">
+			</iframe>
+		</div>
+
+    </div>
+    
+
+    <!-- JavaScript タイマー部分 未実装-->
+    <script th:inline="javascript">
+        let PassedTime = 0;
+
+        function format(time) {
+            let sec = (time % 60) % 60;
+            let min = Math.floor(time / 60) % 60;
+            let hour = Math.floor(time / 3600);
+
+            return hour + ':' + min + ':' + sec;
+        }
+
+
+        function start() {
+
+            intervalID = setInterval('count();', 1000);
+
+
+            //startボタン無効化
+            document.getElementById("startcount").disabled = true;
+        }
+
+        function count() {
+            PassedTime++;
+            let msg = format(PassedTime);
+            document.getElementById("elapsedtime").innerHTML = msg;
+        }
+
+        function stop() {
+            //intervalを停止
+            clearInterval(intervalID);
+
+            //startボタン有効化
+            document.getElementById("startcount").disabled = false;
+        }
+
+    </script>
+
+    <!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+</body>
+
+</html>

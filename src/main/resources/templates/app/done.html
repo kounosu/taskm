@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>TaskTime</title>
@@ -18,11 +19,12 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- ナビゲーションバー -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light shadow">
-			<a class="navbar-brand text-dark" th:href="@{/top/index}"><strong>TaskTime</strong></a>
+			<a class="navbar-brand text-dark" th:href="@{/app/top}"><strong>TaskTime</strong></a>
 			<!-- トグルボタン -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,15 +34,15 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link fas fa-home" th:href="@{/top/index}">Top</a>
+						<a class="nav-link fas fa-home" th:href="@{/app/top}">Top</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link fas fa-book-open" th:href="@{/today/index}">Today</a>
+						<a class="nav-link fas fa-book-open" th:href="@{/app/today}">Today</a>
 					</li>
 
 					<li class="nav-item active">
-						<a class="nav-link fas fa-check" th:href="@{/done/index}">Done</a>
+						<a class="nav-link fas fa-check" th:href="@{/app/done}">Done</a>
 					</li>
 
 				</ul>
@@ -74,7 +76,7 @@
                         </form>
                     </td>
                     <td style="text-align: center;">
-                        <form method="POST" th:action="@{/app/deleteDone/{taskID} (taskID=*{taskID}) }" onsubmit="return checkDelete()">
+                        <form method="POST" th:action="@{/app/deleteDone/{taskID} (taskID=*{taskID}) }" onsubmit="checkDelete()">
                             <button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
                         </form>
                     </td>
@@ -107,4 +109,5 @@
 
 
 </body>
+
 </html>
