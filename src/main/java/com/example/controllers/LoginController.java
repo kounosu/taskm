@@ -9,9 +9,9 @@ public class LoginController {
      * ログインページ表示
      * @return
      */
-    @GetMapping(path = "/")
+    @GetMapping("/login")
     public String login() {
-        return "login/login";
+        return "login";
     }
 
 }
