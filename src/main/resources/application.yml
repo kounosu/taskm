@@ -20,14 +20,18 @@ spring:
       client:
         registration:
           google:
-            client-id: ${CLIENT_ID}
-            client-secret: ${CLIENT_SECRET}
+            # client-id: ${CLIENT_ID}
+            # client-secret: ${CLIENT_SECRET}
+            client-id: 929364304088-nivulbn7cj8cr3m7s5qjuc780jenkueb.apps.googleusercontent.com
+            client-secret: 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
             # ↓本番環境(AWS内)ではコメントアウトを外す
-            # redirect-uri: "https://git.heroku.com/mk-100588-task.git/login/oauth2/code/google"
+            # redirect-uri: http://localhost:8080/login/oauth2/code/google
             
             scope:
             - email
+            - https://www.googleapis.com/auth/userinfo.email
             - profile
+            - https://www.googleapis.com/auth/userinfo.profile
             - openid
             - https://www.googleapis.com/auth/calendar
 
