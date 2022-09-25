@@ -1,10 +1,10 @@
 package com.example.controllers;
 
-import com.example.exception.AccessTokenNullException;
-
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.example.exception.AccessTokenNullException;
 
 @ControllerAdvice
 public class ErrorControllerAdvice {

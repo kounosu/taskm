@@ -11,7 +11,8 @@ import lombok.RequiredArgsConstructor;
 public class UserService {
 
     //UserMapperをコンストラクタインジェクション
-    UserMapper mapper;
+    //UserMapper mapper;
+    private final UserMapper mapper;
     
     //top.html表示時にuserIDとsortを登録する処理
     //IGNOREにより、初回のみ実行する

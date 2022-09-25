@@ -10,25 +10,27 @@ import org.springframework.data.repository.query.Param;
 @Mapper
 public interface UserMapper {
 
-    //top.html表示時にuserIDとsortを登録する処理
+    //top.html表示時にuseridとsortを登録する処理
     //IGNOREにより、初回のみ実行する
-    @Insert("INSERT IGNORE INTO GoogleUser (userID, sort) VALUES (#{userID}, 'date')")
+    //@Insert("INSERT IGNORE INTO GoogleUser (userid, sort) VALUES (#{userid}, 'date')")
+	@Insert("INSERT INTO GoogleUser (userid, sort) VALUES (#{userID}, 'date') ON CONFLICT DO NOTHING")
+	//@Insert("INSERT INTO GoogleUser (userid, sort) VALUES ('matsuda.mutsumi61@gmail.com', 'date') ON CONFLICT DO NOTHING")
     public void insertOneUser(@Param("userID") String userID);
 
     //ログイン中のユーザーのsortを取得
-    @Select("SELECT sort FROM GoogleUser WHERE userID = #{userID}")
-    public String selectSort(@Param("userID") String userID);
+    @Select("SELECT sort FROM GoogleUser WHERE userid = #{userid}")
+    public String selectSort(@Param("userid") String userid);
 
     //ログイン中のユーザーのsortをdateかpriorityに更新
-    @Update("UPDATE GoogleUser SET sort = #{sort} WHERE userID = #{userID}")
-    public void updateUserSort(@Param("sort") String sort, @Param("userID") String userID);
+    @Update("UPDATE GoogleUser SET sort = #{sort} WHERE userid = #{userid}")
+    public void updateUserSort(@Param("sort") String sort, @Param("userid") String userid);
 
     /**
      * DeleteAll処理②
      * ログイン中のユーザーのGoogleUserテーブルの情報を削除
-     * @param userID
+     * @param userid
      */
-    @Delete("DELETE from GoogleUser WHERE userID = #{userID}")
-    public void deleteAll(@Param("userID") String userID);
+    @Delete("DELETE from GoogleUser WHERE userid = #{userid}")
+    public void deleteAll(@Param("userid") String userid);
     
 }

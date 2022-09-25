@@ -4,10 +4,19 @@
 # username, password変更
 spring:
   datasource:
+    #MySql用
+    #url: jdbc:mysql://localhost:3306/TaskTime?serverTimezone=Asia/Tokyo
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    #username: root
+    #password: lovekayo
+    
+    #PostgreSql用
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost/task
-    username: task
-    password:
+    url: jdbc:postgresql://localhost:5432/task
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    #username: task
+    #password: password
 
   sql:
     init:
@@ -20,10 +29,10 @@ spring:
       client:
         registration:
           google:
-            # client-id: ${CLIENT_ID}
-            # client-secret: ${CLIENT_SECRET}
-            client-id: 929364304088-nivulbn7cj8cr3m7s5qjuc780jenkueb.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            #client-id: 544871505102-73tio1ia59gvrnot2kj4dftgdk6epaq6.apps.googleusercontent.com
+            #client-secret: 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
             # ↓本番環境(AWS内)ではコメントアウトを外す
             # redirect-uri: http://localhost:8080/login/oauth2/code/google
             
