@@ -13,10 +13,10 @@ spring:
     #PostgreSql用
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/task
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
-    #username: task
-    #password: password
+    #username: ${SPRING_DATASOURCE_USERNAME}
+    #password: ${SPRING_DATASOURCE_PASSWORD}
+    username: task
+    password: password
 
   sql:
     init:
@@ -29,12 +29,12 @@ spring:
       client:
         registration:
           google:
-            client-id: ${CLIENT_ID}
-            client-secret: ${CLIENT_SECRET}
-            #client-id: 544871505102-73tio1ia59gvrnot2kj4dftgdk6epaq6.apps.googleusercontent.com
-            #client-secret: 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
+            #client-id: ${CLIENT_ID}
+            #client-secret: ${CLIENT_SECRET}
+            client-id: 450100175710-53j4mdum9c60dm55q81pqk4t1ddl8lkh.apps.googleusercontent.com
+            client-secret: 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
             # ↓本番環境(AWS内)ではコメントアウトを外す
-            # redirect-uri: http://localhost:8080/login/oauth2/code/google
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
             
             scope:
             - email

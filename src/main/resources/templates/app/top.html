@@ -170,7 +170,7 @@
 						<td class="text-center">
 							<div class="tooltip1">
 								<form th:action="@{/app/event/{taskID} (taskID=*{taskID}) }" method="POST"
-									onsubmit="return checkAdd()">
+									onsubmit="checkAdd()">
 									<button type="submit" class="btn btn-info btn-sm far fa-plus-square"></button>
 								</form>
 								<div class="description1">Googleカレンダーに予定追加</div>
@@ -193,7 +193,7 @@
 
 						<td style="text-align: center;">
 							<form method="POST" th:action="@{/app/deleteTop/{taskID} (taskID=*{taskID}) }"
-								onsubmit="return checkDelete()">
+								onsubmit="checkDelete()">
 								<button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
 							</form>
 						</td>
@@ -222,7 +222,7 @@
 						<td class="text-center">
 							<div class="tooltip1">
 								<form method="POST" th:action="@{/app/event/{taskID} (taskID=*{taskID}) }"
-									onsubmit="return checkAdd()">
+									onsubmit="checkAdd()">
 									<button type="submit" class="btn btn-info btn-sm far fa-plus-square"></button>
 								</form>
 								<div class="description1">Googleカレンダーに予定追加</div>
@@ -245,7 +245,7 @@
 
 						<td style="text-align: center;">
 							<form method="POST" th:action="@{/app/deleteTop/{taskID} (taskID=*{taskID}) }"
-								onsubmit="return checkDelete()">
+								onsubmit="checkDelete()">
 								<button type="submit" class="btn btn-dark btn-sm far fa-trash-alt"></button>
 							</form>
 						</td>
@@ -322,7 +322,7 @@
 
 	<!-- データ完全削除ボタン -->
 	<form class="text-right" method="POST" th:action="@{/app/deleteAll/{userID} (userID=${userID}) }"
-		onsubmit="return checkDeleteAll()">
+		onsubmit="checkDeleteAll()">
 		<button type="submit" class="btn btn-link btn-sm">ログイン中のユーザーの全ての情報を削除</button>
 	</form>
 

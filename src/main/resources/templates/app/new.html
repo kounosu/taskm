@@ -1,59 +1,184 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8">
-<title>TaskTime</title>
+	<meta charset="UTF-8">
+	<title>TaskTime</title>
 
-<!-- CSS -->
-<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+	<!-- CSS -->
+	<link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
 
-<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
-<!-- Font Awesome -->
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-	rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-	rel="stylesheet">
+	<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 	<!-- ナビゲーションバー -->
 	<header>
-		<div class="col-lg-8 offset-lg-2 text-center">
-			<a class="navbar-brand text-dark" th:href="@{/top/index}"><strong>TaskTime</strong></a>
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<a class="navbar-brand text-dark" th:href="@{/app/top}"><strong>TaskTime</strong></a>
 			<!-- トグルボタン -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link fas fa-home"
-						th:href="@{/top/index}">Top</a></li>
+					<li class="nav-item">
+						<a class="nav-link fas fa-home" th:href="@{/app/top}">Top</a>
+					</li>
 
-					<li class="nav-item"><a class="nav-link fas fa-book-open"
-						th:href="@{/app/today}">Today</a></li>
+					<li class="nav-item">
+						<a class="nav-link fas fa-book-open" th:href="@{/app/today}">Today</a>
+					</li>
 
-					<li class="nav-item"><a class="nav-link fas fa-check"
-						th:href="@{/app/done}">Done</a></li>
+					<li class="nav-item">
+						<a class="nav-link fas fa-check" th:href="@{/app/done}">Done</a>
+					</li>
 
 				</ul>
 			</div>
 
-		</div>
+		</nav>
 	</header>
 
+	<div class="container-lg">
+
+
+		<h2 class="p-3 bg-white text-center">新規タスク登録画面</h2>
+
+		<form method="POST" th:action="@{/app/new}">
+			<table class="table table-borderd table-striped table-hover">
+				<thead>
+					<tr>
+						<th style="text-align: center;">Task</th>
+						<th style="text-align: center;">見積時間(h)</th>
+						<th style="text-align: center;">優先度</th>
+						<th style="text-align: center;">予定日</th>
+						<th style="text-align: center;">開始時刻</th>
+					</tr>
+				</thead>
+
+				<tbody th:object="${task}">
+					<tr>
+						<td><input type="text" th:field="*{taskName}" placeholder="タスク名" class="form-control"
+								th:classappend="${#fields.hasErrors('taskName')}?'is-invalid'" autofocus><br>
+							<span class="text-danger" th:if="${#fields.hasErrors('taskName')}"
+								th:errors="*{taskName}"></span>
+						</td>
+
+						<td><span id="display"></span>(h)<br>
+							<input id="time" type="range" min="0.5" max="6" step="0.5" value="0.5"
+								th:field="*{estimatedTime}">
+						</td>
+						
+						<td><select th:field="*{priority}" class="form-control">
+								<option value="">未定</option>
+								<option value="A">A：重要</option>
+								<option value="B">B：普通</option>
+								<option value="C">C：後で</option>
+							</select></td>
+
+						<td><input type="date" th:field="*{scheduledDate}" class="form-control"
+								th:classappend="${#fields.hasErrors('scheduledDate')}?'is-invalid'"><br>
+							<span class="text-danger" th:if="${#fields.hasErrors('scheduledDate')}"
+								th:errors="*{scheduledDate}"></span>
+						</td>
+
+						<td><input type="time" th:field="*{startTime}" class="form-control"
+								th:classappend="${#fields.hasErrors('startTime')}?'is-invalid'"><br>
+							<span class="text-danger" th:if="${#fields.hasErrors('startTime')}"
+								th:errors="*{startTime}"></span>
+						</td>
+
+					</tr>
+
+				</tbody>
+			</table>
+
+			<!-- userID追加のための記述　hidden -->
+			<div hidden th:object="${task}">
+				<input type="text" readonly name="userID" th:value="${email}">
+			</div>
+
+			<p style="text-align:center">
+				<button class="btn btn-primary">登録</button>
+			</p>
+		</form>
+
+	</div>
+
+
+	<div class="container-lg text-center">
+		<span class="small" th:text="${email}"></span><span class="small">さんのGoogleカレンダーを表示しています</span><br>
+		<iframe th:src="|https://calendar.google.com/calendar/
+			embed?
+
+			src=${email}
+			
+			&ctz=Asia%2FTokyo&amp;
+			height=600&amp;
+			wkst=2&amp;
+			bgcolor=%23ffffff&amp;
+			width=800&amp;
+			height=600&amp;
+			frameborder=0&amp;
+			scrolling=no&amp;
+			mode=WEEK&amp;
+			showTitle=0&amp;
+			showCalendars=0&amp;
+			showTabs=0&amp;
+			showPrint=0&amp;
+			showDate=0&amp;|" style="border:solid 1px #777" width="800" height="500" frameborder="0">
+		</iframe>
+	</div>
+
+
+
+
+	<!-- 見積時間 input type="range"表記のためのJavaScript -->
+	<script>
+		const inputElem = document.getElementById('time'); // input要素
+		const currentValueElem = document.getElementById('display'); // 埋め込む先のspan要素
+
+		// 現在の値を埋め込む関数
+		const setCurrentValue = (val) => {
+			currentValueElem.innerText = val;
+		}
+
+		// inputイベント時に値をセットする関数
+		const rangeOnChange = (e) => {
+			setCurrentValue(e.target.value);
+		}
+
+		window.onload = () => {
+			inputElem.addEventListener('input', rangeOnChange); // スライダー変化時にイベントを発火
+			setCurrentValue(inputElem.value); // ページ読み込み時に値をセット
+
+		}
+
+	</script>
+
+	<!-- MaterialBootstrapCDN(https://mdbootstrap.com/docs/b4/jquery/getting-started/cdn/) -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
 </body>
+
 </html>
