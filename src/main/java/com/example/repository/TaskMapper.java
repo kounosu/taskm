@@ -11,7 +11,6 @@ import org.apache.ibatis.annotations.Update;
 
 import com.example.model.Task;
 
-
 @Mapper
 public interface TaskMapper {
 
@@ -57,7 +56,7 @@ public interface TaskMapper {
 	 * @param userID
 	 * @return
 	 */
-	@Select("SELECT * FROM Task WHERE scheduledDate = CURRENT_DATE AND done = false AND userID = #{userID} ORDER BY " +
+	@Select("SELECT * FROM Task WHERE scheduledDate = to_char(CURRENT_DATE, 'YYYY-MM-DD') AND done = false AND userID = #{userID} ORDER BY " +
 	    "CASE " +
 	        "WHEN startTime IS NULL THEN '2' " +//null最後
 	        "WHEN startTime = '' THEN '1' " +//空文字最後

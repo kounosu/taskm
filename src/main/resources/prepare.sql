@@ -10,15 +10,15 @@ CREATE TABLE IF NOT EXISTS googleuser (
 
 DROP TABLE IF EXISTS task CASCADE;
 CREATE TABLE IF NOT EXISTS task (
-  taskid int NOT NULL,
-  userid varchar(255) NOT NULL,
+  taskid serial NOT NULL,
+  userid VARCHAR(255) NOT NULL,
   taskname varchar(255) NOT NULL,
   estimatedtime double precision NOT NULL,
   scheduleddate varchar(255) NOT NULL,
   starttime varchar(255) NOT NULL,
-  accumlatedtime varchar(255) NOT NULL,
-  done boolean NOT NULL,
-  completiondate varchar(255) NOT NULL,
-  priority varchar(255) NOT NULL,
+  accumlatedtime varchar(255),
+  done boolean default false,
+  completiondate varchar(255),
+  priority varchar(255),
   PRIMARY KEY (taskid)
 );
