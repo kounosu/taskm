@@ -13,10 +13,8 @@ spring:
     #PostgreSql用
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/task
-    #username: ${SPRING_DATASOURCE_USERNAME}
-    #password: ${SPRING_DATASOURCE_PASSWORD}
-    username: task
-    password: password
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
   sql:
     init:
