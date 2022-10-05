@@ -99,3 +99,48 @@
 2022-10-05 13:14:02.981  INFO 74701 --- [RMI TCP Connection(35)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-10-05 13:14:02.985  INFO 74701 --- [RMI TCP Connection(35)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-10-05 13:14:02.986  INFO 74701 --- [RMI TCP Connection(35)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-05 17:20:09.427  INFO 78646 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 78646 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-10-05 17:20:09.429 DEBUG 78646 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-10-05 17:20:09.430  INFO 78646 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-10-05 17:20:09.724  INFO 78646 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 17:20:09.725  INFO 78646 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 17:20:10.504  INFO 78646 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-05 17:20:10.525  INFO 78646 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-10-05 17:20:11.330  INFO 78646 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-05 17:20:11.340  INFO 78646 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 17:20:11.341  INFO 78646 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-10-05 17:20:11.417  INFO 78646 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 17:20:11.417  INFO 78646 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1691 ms
+2022-10-05 17:20:11.582  INFO 78646 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-05 17:20:11.710  INFO 78646 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-05 17:20:11.761  INFO 78646 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-05 17:20:11.812  INFO 78646 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-10-05 17:20:11.959  INFO 78646 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-05 17:20:12.116  INFO 78646 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-10-05 17:20:12.333  INFO 78646 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-05 17:20:12.344  INFO 78646 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 17:20:12.563  WARN 78646 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-05 17:20:12.785  INFO 78646 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@586470fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@26fcc953, org.springframework.security.web.header.HeaderWriterFilter@7adb3510, org.springframework.security.web.csrf.CsrfFilter@27151e10, org.springframework.security.web.authentication.logout.LogoutFilter@6b4211cc, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5550e5d2, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@57ddc306, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35220107, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58ceaea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@249e1de4, org.springframework.security.web.session.SessionManagementFilter@f7c7758, org.springframework.security.web.access.ExceptionTranslationFilter@189dfec2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77d95d6]
+2022-10-05 17:20:13.449  INFO 78646 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 17:20:13.484  INFO 78646 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-05 17:20:13.499  INFO 78646 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 4.489 seconds (JVM running for 5.504)
+2022-10-05 17:20:19.822  INFO 78646 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 17:20:19.823  INFO 78646 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 17:20:19.825  INFO 78646 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-05 17:20:28.889 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-05 17:20:28.913 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-05 17:20:28.916 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-05 17:20:28.919 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-05 17:20:28.920 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-05 17:20:28.939 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-05 17:20:28.941 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-05 17:20:28.941 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-05 17:20:28.945 DEBUG 78646 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-05 17:41:11.350  WARN 78646 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s487ms).
+2022-10-05 17:51:01.576  WARN 78646 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s226ms).
+2022-10-05 20:01:22.490  WARN 78646 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h10m20s915ms).
+2022-10-05 21:56:54.768  WARN 78646 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m32s278ms).
+2022-10-05 22:06:42.845  INFO 78646 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-05 22:06:42.869  INFO 78646 --- [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-05 22:06:42.872  INFO 78646 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-05 22:06:42.874  INFO 78646 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
