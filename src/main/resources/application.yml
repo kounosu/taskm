@@ -42,8 +42,8 @@ spring:
 
 #Tomcatのポート番号
 #AWS環境では8080なので以下コメントアウトする
-#server:
-    #port: 8080
+server:
+    port: 8080
 
 #Log Level
 logging:
@@ -51,4 +51,4 @@ logging:
     name: ./logs/tasktime.log
   level:
     '[com.example]': debug
-    '[org.springframework.web]': DEBUG
+    #[org.springframework.web]': DEBUG
