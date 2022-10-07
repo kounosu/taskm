@@ -51,4 +51,4 @@ logging:
     name: ./logs/tasktime.log
   level:
     '[com.example]': debug
-    #[org.springframework.web]': DEBUG
+    '[org.springframework.web]': DEBUG

@@ -1,46 +1,16 @@
-2022-10-06 00:58:51.941  INFO 81004 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 81004 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-10-06 00:58:51.945 DEBUG 81004 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-10-06 00:58:51.946  INFO 81004 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-10-06 00:58:52.255  INFO 81004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-06 00:58:52.256  INFO 81004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-06 00:58:53.367  INFO 81004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-06 00:58:53.394  INFO 81004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
-2022-10-06 00:58:54.456  INFO 81004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-06 00:58:54.473  INFO 81004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-06 00:58:54.474  INFO 81004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-10-06 00:58:54.563  INFO 81004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-06 00:58:54.563  INFO 81004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2307 ms
-2022-10-06 00:58:54.709  INFO 81004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-10-06 00:58:54.872  INFO 81004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-10-06 00:58:54.942  INFO 81004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-06 00:58:55.051  INFO 81004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-10-06 00:58:55.392  INFO 81004 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-06 00:58:55.622  INFO 81004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-10-06 00:58:55.931  INFO 81004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-06 00:58:55.946  INFO 81004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-06 00:58:56.255  WARN 81004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-06 00:58:56.602  INFO 81004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@404b2e80, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c966a1, org.springframework.security.web.header.HeaderWriterFilter@2c5183f8, org.springframework.security.web.csrf.CsrfFilter@2c37d2b8, org.springframework.security.web.authentication.logout.LogoutFilter@32dd2aad, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@68a4ab3c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6c064d7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3989cc2e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f178028, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d268e24, org.springframework.security.web.session.SessionManagementFilter@18f46f9e, org.springframework.security.web.access.ExceptionTranslationFilter@2c95a179, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ceee99f]
-2022-10-06 00:58:56.796 DEBUG 81004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-10-06 00:58:56.917 DEBUG 81004 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-10-06 00:58:56.957 DEBUG 81004 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-10-06 00:58:56.970 DEBUG 81004 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-10-06 00:58:57.586  INFO 81004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-10-06 00:58:57.648  INFO 81004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-10-06 00:58:57.666  INFO 81004 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 6.386 seconds (JVM running for 7.983)
-2022-10-06 00:59:05.702  INFO 81004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-06 00:59:05.702  INFO 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-10-06 00:59:05.702 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2022-10-06 00:59:05.703 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2022-10-06 00:59:05.703 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2022-10-06 00:59:05.704 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@58e237cb
-2022-10-06 00:59:05.704 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71285cd3
-2022-10-06 00:59:05.704 DEBUG 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-10-06 00:59:05.704  INFO 81004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-10-06 00:59:05.762 DEBUG 81004 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
-2022-10-06 00:59:05.766 DEBUG 81004 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
-2022-10-06 00:59:05.887 DEBUG 81004 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-10-06 00:59:06.292 DEBUG 81004 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-10-06 01:01:22.120  INFO 81004 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-10-06 01:01:22.171  INFO 81004 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-06 01:01:22.175  INFO 81004 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-10-06 01:01:22.178  INFO 81004 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-07 01:00:22.636  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m39s467ms).
+2022-10-07 03:16:55.850  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h15m2s827ms).
+2022-10-07 07:17:19.817  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h23s967ms).
+2022-10-07 08:01:26.569  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m36s787ms).
+2022-10-07 10:01:51.679  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s110ms).
+2022-10-07 10:14:05.723  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m44s67ms).
+2022-10-07 10:40:48.810  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m43s88ms).
+2022-10-07 12:41:14.032  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s222ms).
+2022-10-07 13:03:27.892  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m13s860ms).
+2022-10-07 17:20:00.108  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h16m32s216ms).
+2022-10-07 17:20:27.674  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s566ms), soft-evicting connections from pool.
+2022-10-07 17:36:46.315  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s478ms).
+2022-10-07 18:55:13.032  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-07 18:55:13.134  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-07 18:55:13.145  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-07 18:55:13.149  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
