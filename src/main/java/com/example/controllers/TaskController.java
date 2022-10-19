@@ -266,7 +266,7 @@ public class TaskController {
 	public String displayNew(Model model, @ModelAttribute Task task, @AuthenticationPrincipal OAuth2User oauth2User) {
 		model.addAttribute("email", oauth2User.getAttribute("email"));
 		task.setScheduledDate(LocalDate.now().toString());
-		task.setStartTime("12:00");
+		task.setStartTime("00:00");
 		return "/app/new.html";
 	}
 	/**
@@ -289,7 +289,7 @@ public class TaskController {
 
 			model.addAttribute("email", oauth2User.getAttribute("email"));
 			task.setScheduledDate(LocalDate.now().toString());
-			task.setStartTime("12:00");
+			task.setStartTime("00:00");
 			return "/app/new.html";
 		}
 

@@ -29,7 +29,7 @@ spring:
           google:
             client-id: ${CLIENT_ID}
             client-secret: ${CLIENT_SECRET}
-            # ↓本番環境(AWS内)ではコメントアウトを外す
+             #↓本番環境(AWS内)ではコメントアウトを外す
             redirect-uri: https://mk-100588-taskm.herokuapp.com/login/oauth2/code/google
             
             scope:
@@ -42,8 +42,8 @@ spring:
 
 #Tomcatのポート番号
 #AWS環境では8080なので以下コメントアウトする
-server:
-    port: 8080
+#server:
+    #port: 8080
 
 #Log Level
 logging:
@@ -51,4 +51,4 @@ logging:
     name: ./logs/tasktime.log
   level:
     '[com.example]': debug
-    '[org.springframework.web]': DEBUG
+    #S'[org.springframework.web]': DEBUG

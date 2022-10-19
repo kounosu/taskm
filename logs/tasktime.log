@@ -1,16 +1,205 @@
-2022-10-07 01:00:22.636  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m39s467ms).
-2022-10-07 03:16:55.850  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h15m2s827ms).
-2022-10-07 07:17:19.817  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h23s967ms).
-2022-10-07 08:01:26.569  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m36s787ms).
-2022-10-07 10:01:51.679  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s110ms).
-2022-10-07 10:14:05.723  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m44s67ms).
-2022-10-07 10:40:48.810  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m43s88ms).
-2022-10-07 12:41:14.032  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s222ms).
-2022-10-07 13:03:27.892  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m13s860ms).
-2022-10-07 17:20:00.108  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h16m32s216ms).
-2022-10-07 17:20:27.674  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s566ms), soft-evicting connections from pool.
-2022-10-07 17:36:46.315  WARN 81446 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s478ms).
-2022-10-07 18:55:13.032  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-10-07 18:55:13.134  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-07 18:55:13.145  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-10-07 18:55:13.149  INFO 81446 --- [RMI TCP Connection(121)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 18:36:32.512  INFO 15321 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 15321 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-10-19 18:36:32.516 DEBUG 15321 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-10-19 18:36:32.516  INFO 15321 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-10-19 18:36:32.770  INFO 15321 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-19 18:36:32.817  INFO 15321 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-19 18:36:33.640  INFO 15321 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 18:36:33.660  INFO 15321 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-10-19 18:36:35.092  INFO 15321 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 18:36:35.110  INFO 15321 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 18:36:35.111  INFO 15321 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-10-19 18:36:35.230  INFO 15321 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 18:36:35.231  INFO 15321 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2413 ms
+2022-10-19 18:36:35.483  INFO 15321 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 18:36:35.720  INFO 15321 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 18:36:35.802  INFO 15321 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 18:36:35.913  INFO 15321 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-10-19 18:36:36.222  INFO 15321 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 18:36:36.455  INFO 15321 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-10-19 18:36:36.781  INFO 15321 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 18:36:36.796  INFO 15321 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 18:36:37.041  WARN 15321 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 18:36:37.332  INFO 15321 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62b0c504, org.springframework.security.web.context.SecurityContextPersistenceFilter@1528504d, org.springframework.security.web.header.HeaderWriterFilter@305cc587, org.springframework.security.web.csrf.CsrfFilter@28647689, org.springframework.security.web.authentication.logout.LogoutFilter@70e9ed4a, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@24262075, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4baffaf4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a8755d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e48b99d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e0a9ce6, org.springframework.security.web.session.SessionManagementFilter@4076f271, org.springframework.security.web.access.ExceptionTranslationFilter@18d3f4b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@721bebfd]
+2022-10-19 18:36:38.142  INFO 15321 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-19 18:36:38.206  INFO 15321 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 18:36:38.225  INFO 15321 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 6.19 seconds (JVM running for 7.803)
+2022-10-19 18:36:51.771  INFO 15321 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 18:36:51.772  INFO 15321 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-19 18:36:51.773  INFO 15321 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-19 18:37:00.937 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:37:00.959 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:00.965 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:37:00.969 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:37:00.970 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:01.000 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:37:01.004 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:37:01.004 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:01.010 DEBUG 15321 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:37:16.363 DEBUG 15321 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-10-19 18:37:16.366 DEBUG 15321 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 10(Integer)
+2022-10-19 18:37:16.372 DEBUG 15321 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-10-19 18:37:16.384 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:37:16.384 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:16.385 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:37:16.386 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:37:16.386 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:16.387 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:37:16.388 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:37:16.388 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:37:16.390 DEBUG 15321 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-10-19 18:37:34.777  INFO 15321 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 18:37:34.807  INFO 15321 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 18:37:34.811  INFO 15321 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 18:37:34.814  INFO 15321 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 18:39:13.318  INFO 15403 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 15403 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-10-19 18:39:13.319 DEBUG 15403 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-10-19 18:39:13.319  INFO 15403 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-10-19 18:39:13.499  INFO 15403 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-19 18:39:13.499  INFO 15403 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-19 18:39:14.044  INFO 15403 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 18:39:14.056  INFO 15403 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-10-19 18:39:14.541  INFO 15403 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 18:39:14.549  INFO 15403 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 18:39:14.549  INFO 15403 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-10-19 18:39:14.605  INFO 15403 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 18:39:14.605  INFO 15403 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2022-10-19 18:39:14.710  INFO 15403 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 18:39:14.781  INFO 15403 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 18:39:14.813  INFO 15403 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 18:39:14.842  INFO 15403 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-10-19 18:39:14.937  INFO 15403 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 18:39:15.006  INFO 15403 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-10-19 18:39:15.116  INFO 15403 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 18:39:15.121  INFO 15403 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 18:39:15.253  WARN 15403 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 18:39:15.375  INFO 15403 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59cc9623, org.springframework.security.web.context.SecurityContextPersistenceFilter@29d1dc7f, org.springframework.security.web.header.HeaderWriterFilter@3bc80ed0, org.springframework.security.web.csrf.CsrfFilter@f87d8d9, org.springframework.security.web.authentication.logout.LogoutFilter@38ecdf28, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@713252fb, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@31e01701, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684ddb45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e4420a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c01e694, org.springframework.security.web.session.SessionManagementFilter@2ca807f8, org.springframework.security.web.access.ExceptionTranslationFilter@5d401fc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d58cde3]
+2022-10-19 18:39:15.797  INFO 15403 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-19 18:39:15.824  INFO 15403 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 18:39:15.835  INFO 15403 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 2.823 seconds (JVM running for 3.431)
+2022-10-19 18:39:18.708  INFO 15403 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 18:39:18.708  INFO 15403 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-19 18:39:18.709  INFO 15403 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-19 18:39:27.164 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-10-19 18:39:27.184 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 0.5(Double), 2022-10-19(String), 00:00(String)
+2022-10-19 18:39:27.191 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-10-19 18:39:27.200 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:39:27.201 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:39:27.202 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:39:27.205 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:39:27.205 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:39:27.221 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:39:27.223 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:39:27.223 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:39:27.227 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:49:50.011 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:49:50.011 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:49:50.012 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:49:50.013 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:49:50.013 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:49:50.014 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:49:50.015 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:49:50.015 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:49:50.017 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:52:14.245 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-10-19 18:52:14.246 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 11(Integer)
+2022-10-19 18:52:14.248 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-10-19 18:52:14.255 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:14.256 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:14.257 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:14.257 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:14.258 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:14.259 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:14.260 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:14.260 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:14.261 DEBUG 15403 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-10-19 18:52:17.171 DEBUG 15403 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-10-19 18:52:17.171 DEBUG 15403 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:17.172 DEBUG 15403 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
+2022-10-19 18:52:18.619 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:18.619 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:18.620 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:18.621 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:18.622 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:18.623 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:18.624 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:18.625 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:18.626 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-10-19 18:52:24.765 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-10-19 18:52:24.767 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 0.5(Double), 2022-10-19(String), 00:00(String)
+2022-10-19 18:52:24.770 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-10-19 18:52:24.777 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:24.778 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:24.778 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:24.779 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:24.779 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:24.781 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:24.782 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:24.782 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:24.784 DEBUG 15403 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:52:27.011 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-10-19 18:52:27.012 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:27.013 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
+2022-10-19 18:52:27.929 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectTodayTask         : ==>  Preparing: SELECT * FROM Task WHERE scheduledDate = to_char(CURRENT_DATE, 'YYYY-MM-DD') AND done = false AND userID = ? ORDER BY CASE WHEN startTime IS NULL THEN '2' WHEN startTime = '' THEN '1' ELSE '0' END, startTime ASC
+2022-10-19 18:52:27.930 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectTodayTask         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:27.937 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectTodayTask         : <==      Total: 1
+2022-10-19 18:52:31.001 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.selectOne      : ==>  Preparing: SELECT * FROM Task WHERE taskID = ?
+2022-10-19 18:52:31.002 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.selectOne      : ==> Parameters: 12(Integer)
+2022-10-19 18:52:31.003 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.selectOne      : <==      Total: 1
+2022-10-19 18:52:32.746 DEBUG 15403 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.updateOneTask  : ==>  Preparing: UPDATE Task SET taskName = ?, estimatedTime = ?, scheduledDate = ?, startTime = ?, priority = ? WHERE taskID = ?
+2022-10-19 18:52:32.747 DEBUG 15403 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.updateOneTask  : ==> Parameters: a(String), 0.5(Double), 2022-10-19(String), 00:00(String), (String), 12(Integer)
+2022-10-19 18:52:32.748 DEBUG 15403 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.updateOneTask  : <==    Updates: 1
+2022-10-19 18:52:32.755 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:32.756 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:32.756 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:32.757 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:32.757 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:32.758 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:32.758 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:32.759 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:32.762 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:52:41.258 DEBUG 15403 --- [http-nio-8080-exec-7] com.example.repository.TaskMapper.done   : ==>  Preparing: UPDATE Task SET done = true, completionDate = CURRENT_DATE WHERE taskID = ?
+2022-10-19 18:52:41.259 DEBUG 15403 --- [http-nio-8080-exec-7] com.example.repository.TaskMapper.done   : ==> Parameters: 12(Integer)
+2022-10-19 18:52:41.262 DEBUG 15403 --- [http-nio-8080-exec-7] com.example.repository.TaskMapper.done   : <==    Updates: 1
+2022-10-19 18:52:41.269 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:41.270 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:41.270 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:41.271 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:41.271 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:41.271 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:41.272 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:41.272 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:41.273 DEBUG 15403 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-10-19 18:52:43.167 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-10-19 18:52:43.168 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:43.169 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 1
+2022-10-19 18:52:46.183 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-10-19 18:52:46.184 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 12(Integer)
+2022-10-19 18:52:46.185 DEBUG 15403 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-10-19 18:52:46.193 DEBUG 15403 --- [http-nio-8080-exec-3] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-10-19 18:52:46.193 DEBUG 15403 --- [http-nio-8080-exec-3] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:46.194 DEBUG 15403 --- [http-nio-8080-exec-3] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
+2022-10-19 18:52:48.350 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:52:48.350 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:48.351 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:52:48.352 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:52:48.352 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:48.353 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:52:48.354 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:52:48.354 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:52:48.355 DEBUG 15403 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-10-19 18:53:14.559 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-10-19 18:53:14.560 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 0.5(Double), 2022-10-19(String), 00:00(String)
+2022-10-19 18:53:14.567 DEBUG 15403 --- [http-nio-8080-exec-10] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-10-19 18:53:14.574 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-10-19 18:53:14.575 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:53:14.575 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-10-19 18:53:14.576 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-10-19 18:53:14.576 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:53:14.576 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-10-19 18:53:14.577 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-10-19 18:53:14.577 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-10-19 18:53:14.579 DEBUG 15403 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-10-19 18:54:00.251  INFO 15403 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 18:54:00.273  INFO 15403 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 18:54:00.275  INFO 15403 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 18:54:00.277  INFO 15403 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
