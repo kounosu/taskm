@@ -1,56 +1,481 @@
-2022-10-30 14:01:03.877  INFO 45162 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 45162 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-10-30 14:01:03.934 DEBUG 45162 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-10-30 14:01:03.935  INFO 45162 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-10-30 14:01:04.256  INFO 45162 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-30 14:01:04.256  INFO 45162 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-30 14:01:05.340  INFO 45162 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-30 14:01:05.366  INFO 45162 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
-2022-10-30 14:01:06.534  INFO 45162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-30 14:01:06.550  INFO 45162 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-30 14:01:06.551  INFO 45162 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-10-30 14:01:06.660  INFO 45162 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-30 14:01:06.661  INFO 45162 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2404 ms
-2022-10-30 14:01:06.840  INFO 45162 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-10-30 14:01:09.539  INFO 45162 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-10-30 14:01:09.627  INFO 45162 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-30 14:01:09.766  INFO 45162 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-10-30 14:01:10.146  INFO 45162 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-30 14:01:10.555  INFO 45162 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-10-30 14:01:11.255  INFO 45162 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-30 14:01:11.271  INFO 45162 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-30 14:01:11.498  WARN 45162 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-30 14:01:11.786  INFO 45162 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14f51459, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ee9b88c, org.springframework.security.web.header.HeaderWriterFilter@47d532ff, org.springframework.security.web.csrf.CsrfFilter@24f6b8af, org.springframework.security.web.authentication.logout.LogoutFilter@2b6bf64, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@75c65d8d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7c945333, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f1a3357, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45c06125, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@607e2a55, org.springframework.security.web.session.SessionManagementFilter@6107a08, org.springframework.security.web.access.ExceptionTranslationFilter@19f9429f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d15f947]
-2022-10-30 14:01:11.962 DEBUG 45162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-10-30 14:01:12.057 DEBUG 45162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-10-30 14:01:12.092 DEBUG 45162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-10-30 14:01:12.104 DEBUG 45162 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-10-30 14:01:12.556  INFO 45162 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-10-30 14:01:12.595  INFO 45162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-10-30 14:01:12.608  INFO 45162 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 9.305 seconds (JVM running for 10.126)
-2022-10-30 14:01:17.538  INFO 45162 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-10-30 14:01:17.571  INFO 45162 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-10-30 14:01:17.574  INFO 45162 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-10-30 14:01:18.529  INFO 45162 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-10-30 14:02:11.137  INFO 45179 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 45179 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-10-30 14:02:11.139 DEBUG 45179 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-10-30 14:02:11.139  INFO 45179 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-10-30 14:02:11.362  INFO 45179 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-30 14:02:11.362  INFO 45179 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-30 14:02:12.001  INFO 45179 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-10-30 14:02:12.017  INFO 45179 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2022-10-30 14:02:12.696  INFO 45179 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-30 14:02:12.770  INFO 45179 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1407 ms
-2022-10-30 14:02:12.880  INFO 45179 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-10-30 14:02:16.001  INFO 45179 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-10-30 14:02:16.054  INFO 45179 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-10-30 14:02:16.095  INFO 45179 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-10-30 14:02:16.221  INFO 45179 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-10-30 14:02:16.322  INFO 45179 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-10-30 14:02:16.899  INFO 45179 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-10-30 14:02:16.908  INFO 45179 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-10-30 14:02:17.094  WARN 45179 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-10-30 14:02:17.269  INFO 45179 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8d2066d, org.springframework.security.web.context.SecurityContextPersistenceFilter@28e02733, org.springframework.security.web.header.HeaderWriterFilter@33c9a390, org.springframework.security.web.csrf.CsrfFilter@14deb072, org.springframework.security.web.authentication.logout.LogoutFilter@4fbc55e8, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@69f13e28, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@36ed5d46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19c023d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f191740, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50352ea2, org.springframework.security.web.session.SessionManagementFilter@7e84b747, org.springframework.security.web.access.ExceptionTranslationFilter@31c094ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fd9914b]
-2022-10-30 14:02:17.391 DEBUG 45179 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-10-30 14:02:17.470 DEBUG 45179 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-10-30 14:02:17.495 DEBUG 45179 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-10-30 14:02:17.504 DEBUG 45179 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-06 02:30:31.091  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h28s663ms).
+2022-11-06 03:50:55.825  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m24s829ms).
+2022-11-06 03:55:56.019  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m30s190ms).
+2022-11-06 04:01:22.808  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s776ms).
+2022-11-06 04:03:13.506  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s697ms).
+2022-11-06 04:08:16.709  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m33s200ms).
+2022-11-06 04:25:10.491  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s769ms).
+2022-11-06 04:26:38.586  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s94ms).
+2022-11-06 04:36:24.039  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m15s450ms).
+2022-11-06 04:48:06.896  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m42s848ms).
+2022-11-06 06:11:43.271  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m36s366ms).
+2022-11-06 06:13:41.961  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s677ms), soft-evicting connections from pool.
+2022-11-06 06:37:35.297  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m53s234ms).
+2022-11-06 06:42:48.521  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s224ms).
+2022-11-06 08:43:44.540  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s20ms).
+2022-11-06 09:43:28.177  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m43s637ms).
+2022-11-06 09:56:57.928  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m29s656ms).
+2022-11-06 09:58:27.459  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s623ms).
+2022-11-06 10:14:03.083  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s625ms).
+2022-11-06 14:08:45.202  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h54m42s118ms).
+2022-11-06 14:25:45.416  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s163ms).
+2022-11-06 14:26:49.955  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s538ms).
+2022-11-06 14:43:05.516  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s553ms).
+2022-11-06 15:02:50.556  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m45s7ms).
+2022-11-06 15:22:05.568  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m14s973ms).
+2022-11-06 15:39:34.759  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s168ms).
+2022-11-06 15:57:30.927  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m56s168ms).
+2022-11-06 16:17:05.815  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m4s867ms).
+2022-11-06 16:39:07.083  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m1s226ms).
+2022-11-06 16:57:36.207  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s111ms).
+2022-11-06 16:59:53.673  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m17s466ms).
+2022-11-06 17:51:17.774  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m24s101ms).
+2022-11-06 18:02:13.577  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s776ms).
+2022-11-06 20:08:16.094  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2s472ms).
+2022-11-06 20:58:52.136  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m5s673ms).
+2022-11-06 21:03:10.876  INFO 57627 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-06 21:03:10.886  INFO 57627 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-06 21:03:11.350  INFO 65353 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 65353 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-11-06 21:03:11.351 DEBUG 65353 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-11-06 21:03:11.351  INFO 65353 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-11-06 21:03:11.633  INFO 65353 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-06 21:03:11.633  INFO 65353 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-06 21:03:12.629  INFO 65353 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-06 21:03:12.654  INFO 65353 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-11-06 21:03:13.829  INFO 65353 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 21:03:13.846  INFO 65353 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 21:03:13.846  INFO 65353 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-06 21:03:13.918  INFO 65353 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 21:03:13.918  INFO 65353 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2284 ms
+2022-11-06 21:03:14.058  INFO 65353 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-06 21:03:14.393  INFO 57627 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-06 21:03:14.619  INFO 57627 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 57627 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-11-06 21:03:14.620 DEBUG 57627 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-11-06 21:03:14.620  INFO 57627 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-11-06 21:03:14.746  INFO 57627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-06 21:03:14.748  INFO 57627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-11-06 21:03:14.836  INFO 57627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 21:03:14.836  INFO 57627 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 21:03:14.837  INFO 57627 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-06 21:03:14.847  INFO 57627 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 21:03:14.848  INFO 57627 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
+2022-11-06 21:03:14.874  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-11-06 21:03:23.484  WARN 57627 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Default transaction isolation level detection failed (このコネクションは既にクローズされています。).
+2022-11-06 21:03:23.495 ERROR 57627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Error thrown while acquiring connection from data source
+
+org.postgresql.util.PSQLException: このコネクションは既にクローズされています。
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:881) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgConnection.setTransactionIsolation(PgConnection.java:940) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:419) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.example.TaskApplication.main(TaskApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+
+2022-11-06 21:03:23.499 ERROR 57627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Exception during pool initialization.
+
+org.postgresql.util.PSQLException: このコネクションは既にクローズされています。
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:881) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgConnection.setTransactionIsolation(PgConnection.java:940) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:419) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.13.jar:5.3.13]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.example.TaskApplication.main(TaskApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+
+2022-11-06 21:03:23.505  INFO 57627 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-06 21:03:23.512  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-11-06 21:03:24.537  INFO 65353 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-06 21:03:24.627  INFO 65353 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-06 21:03:24.742  INFO 65353 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-11-06 21:03:25.041  INFO 65353 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-06 21:03:25.542  INFO 65353 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-11-06 21:03:26.612  INFO 65353 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-06 21:03:26.628  INFO 65353 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-06 21:03:26.927  WARN 65353 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-06 21:03:27.267  INFO 65353 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a99684b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c44466c, org.springframework.security.web.header.HeaderWriterFilter@7f8f9316, org.springframework.security.web.csrf.CsrfFilter@658a5a74, org.springframework.security.web.authentication.logout.LogoutFilter@2f945106, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1eb777e2, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6e5b5bcc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384ced5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39529f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3730ea96, org.springframework.security.web.session.SessionManagementFilter@38f6f371, org.springframework.security.web.access.ExceptionTranslationFilter@29dede7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@684f273f]
+2022-11-06 21:03:27.483 DEBUG 65353 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-06 21:03:27.599 DEBUG 65353 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2022-11-06 21:03:27.642 DEBUG 65353 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-06 21:03:27.656 DEBUG 65353 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-06 21:03:28.174  WARN 65353 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-11-06 21:03:28.222  INFO 65353 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 21:03:28.235  INFO 65353 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 17.339 seconds (JVM running for 18.229)
+2022-11-06 21:03:28.449  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-11-06 21:03:28.450  INFO 57627 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-11-06 21:03:29.292  INFO 57627 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-06 21:03:29.293  INFO 57627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-06 21:03:29.347  WARN 57627 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-06 21:03:29.371  INFO 57627 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@640930b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4116c28f, org.springframework.security.web.header.HeaderWriterFilter@41aa8b6d, org.springframework.security.web.csrf.CsrfFilter@5b6c056, org.springframework.security.web.authentication.logout.LogoutFilter@25b8d317, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@26b25d50, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@254f1df8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af0558e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f144e5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79f63522, org.springframework.security.web.session.SessionManagementFilter@721118eb, org.springframework.security.web.access.ExceptionTranslationFilter@743ffa51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5279e371]
+2022-11-06 21:03:29.406 DEBUG 57627 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-06 21:03:29.415 DEBUG 57627 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2022-11-06 21:03:29.425 DEBUG 57627 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-06 21:03:29.429 DEBUG 57627 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-06 21:03:29.480  INFO 57627 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-06 21:03:29.489  WARN 57627 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-06 21:03:29.490  INFO 57627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-06 21:03:29.491  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-11-06 21:03:32.429  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-11-06 21:03:32.431  INFO 57627 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-06 21:03:32.444  INFO 57627 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-06 21:03:32.484 ERROR 57627 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-06 21:03:43.436  INFO 65353 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 21:03:43.436  INFO 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 21:03:43.436 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-06 21:03:43.437 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-06 21:03:43.437 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18139523
+2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3325722
+2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-06 21:03:43.438  INFO 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-06 21:03:43.483 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2022-11-06 21:03:43.487 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
+2022-11-06 21:03:43.574 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:03:43.898 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:00.755 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://www.googleapis.com/oauth2/v3/certs
+2022-11-06 21:04:00.759 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2022-11-06 21:04:01.452 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2022-11-06 21:04:01.455 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json;charset=UTF-8"
+2022-11-06 21:04:01.585 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:01.586 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:01.903 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:01.925 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:02.333 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:02.338 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:02.339 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:02.644 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:02.648 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:02.648 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:02.951 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 3
+2022-11-06 21:04:02.973 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:03.058 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:03.086 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:03.091 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:03.100 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:07.273 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/1", parameters={masked}
+2022-11-06 21:04:07.274 DEBUG 65353 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-06 21:04:07.558 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-06 21:04:07.562 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 1(Integer)
+2022-11-06 21:04:08.076 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-06 21:04:08.081 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-06 21:04:08.083 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-06 21:04:08.090 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:08.091 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:08.468 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:08.468 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:08.893 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:08.894 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:08.895 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:09.163 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:09.164 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:09.165 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:09.516 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-06 21:04:09.519 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:09.542 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:09.557 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:09.558 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:09.560 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:10.959 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-11-06 21:04:10.960 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:10.963 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-11-06 21:04:10.963 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-11-06 21:04:10.974 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-11-06 21:04:10.977 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-06 21:04:10.997 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-06 21:04:10.998 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Nov 06 21:04:10 JST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-11-06 21:04:11.040 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-11-06 21:04:12.743 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/2", parameters={masked}
+2022-11-06 21:04:12.745 DEBUG 65353 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-06 21:04:13.514 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-06 21:04:13.515 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 2(Integer)
+2022-11-06 21:04:14.040 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-06 21:04:14.042 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-06 21:04:14.042 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-06 21:04:14.049 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:14.050 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:14.564 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:14.565 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:15.091 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:15.530 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:15.531 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:15.941 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:15.942 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:15.943 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:16.291 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-06 21:04:16.294 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:16.314 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:16.333 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:16.334 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:16.337 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:18.418 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/3", parameters={masked}
+2022-11-06 21:04:18.420 DEBUG 65353 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-06 21:04:18.806 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-06 21:04:18.807 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 3(Integer)
+2022-11-06 21:04:19.134 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-06 21:04:19.136 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-06 21:04:19.137 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-06 21:04:19.144 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:19.144 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:19.146 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:19.146 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:19.425 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:19.426 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:19.426 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:19.784 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:19.785 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:19.785 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:20.138 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-11-06 21:04:20.141 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:20.155 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:20.174 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:20.175 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:20.177 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:21.764 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
+2022-11-06 21:04:21.764 DEBUG 65353 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
+2022-11-06 21:04:21.773 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:21.800 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:21.817 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:21.818 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:21.822 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:32.619 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
+2022-11-06 21:04:32.619 DEBUG 65353 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
+2022-11-06 21:04:32.941 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-11-06 21:04:32.945 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 1.0(Double), 2022-11-06(String), 00:00(String)
+2022-11-06 21:04:33.269 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-11-06 21:04:33.272 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-06 21:04:33.272 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-06 21:04:33.278 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:33.278 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:33.279 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:33.279 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:33.767 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:33.768 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:33.768 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:34.115 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:34.116 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:34.116 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:34.387 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-06 21:04:34.391 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:34.403 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:34.420 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:34.421 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:34.423 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:36.769 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
+2022-11-06 21:04:36.770 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
+2022-11-06 21:04:36.771 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:36.781 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:36.797 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:36.797 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:36.801 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:44.705 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
+2022-11-06 21:04:44.706 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
+2022-11-06 21:04:45.499 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-11-06 21:04:45.510 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), 篠原(String), 1.0(Double), 2022-11-06(String), 00:00(String)
+2022-11-06 21:04:45.837 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-11-06 21:04:45.838 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-06 21:04:45.839 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-06 21:04:45.845 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:04:45.846 DEBUG 65353 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:04:45.847 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:04:45.847 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:46.348 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:04:46.876 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:04:46.877 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:47.400 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:04:47.401 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:04:47.401 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:04:47.697 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-06 21:04:47.701 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:47.715 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:47.728 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:47.728 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:47.732 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:51.929 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-06 21:04:51.930 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-06 21:04:52.336 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-06 21:04:52.342 DEBUG 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.controllers.ErrorControllerAdvice#otherError(Exception, Model)
+2022-11-06 21:04:52.343  WARN 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]]
+2022-11-06 21:04:52.343 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="/error/basic_error.html"; model={message=nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]}]
+2022-11-06 21:04:52.344 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:04:52.351 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:04:52.367 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:04:52.368 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:04:52.372 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:01.764 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:12:01.765 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:12:02.082 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:12:02.082 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:02.389 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:12:02.390 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:12:02.391 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:02.645 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:12:02.646 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:12:02.646 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:03.004 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-06 21:12:03.006 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:12:03.021 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:03.038 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:12:03.040 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:12:03.043 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:04.807 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/done", parameters={}
+2022-11-06 21:12:04.807 DEBUG 65353 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayDone(Model, OAuth2User)
+2022-11-06 21:12:05.046 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-11-06 21:12:05.046 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:05.286 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
+2022-11-06 21:12:05.288 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:12:05.293 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:05.307 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:12:05.308 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:12:05.312 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:06.242 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:12:06.242 DEBUG 65353 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:12:06.456 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:12:06.457 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:06.701 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:12:06.702 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:12:06.702 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:06.999 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:12:07.000 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:12:07.001 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:07.205 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-06 21:12:07.207 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:12:07.217 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:07.230 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:12:07.231 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:12:07.234 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:09.053 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-06 21:12:09.054 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-06 21:12:09.285 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-06 21:12:09.287 DEBUG 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.controllers.ErrorControllerAdvice#otherError(Exception, Model)
+2022-11-06 21:12:09.287  WARN 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]]
+2022-11-06 21:12:09.288 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="/error/basic_error.html"; model={message=nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]}]
+2022-11-06 21:12:09.289 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:12:09.294 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:09.314 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:12:09.315 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:12:09.318 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:11.503 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-06 21:12:11.503 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-06 21:12:11.765 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-06 21:12:11.766 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:11.966 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-06 21:12:11.967 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-06 21:12:11.967 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:12.322 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-06 21:12:12.323 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-06 21:12:12.323 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-06 21:12:12.630 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-06 21:12:12.633 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-06 21:12:12.645 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:12:12.662 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-06 21:12:12.663 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-06 21:12:12.666 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-06 21:22:22.601  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-06 21:22:22.640  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-06 21:22:22.643  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-06 21:22:23.085  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
