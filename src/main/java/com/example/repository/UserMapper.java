@@ -15,15 +15,15 @@ public interface UserMapper {
     //@Insert("INSERT IGNORE INTO GoogleUser (userid, sort) VALUES (#{userid}, 'date')")
 	@Insert("INSERT INTO GoogleUser (userid, sort) VALUES (#{userID}, 'date') ON CONFLICT DO NOTHING")
 	//@Insert("INSERT INTO GoogleUser (userid, sort) VALUES ('matsuda.mutsumi61@gmail.com', 'date') ON CONFLICT DO NOTHING")
-    public void insertOneUser(@Param("userID") String userID);
+    void insertOneUser(@Param("userID") String userID);
 
     //ログイン中のユーザーのsortを取得
     @Select("SELECT sort FROM GoogleUser WHERE userid = #{userid}")
-    public String selectSort(@Param("userid") String userid);
+    String selectSort(@Param("userid") String userid);
 
     //ログイン中のユーザーのsortをdateかpriorityに更新
     @Update("UPDATE GoogleUser SET sort = #{sort} WHERE userid = #{userid}")
-    public void updateUserSort(@Param("sort") String sort, @Param("userid") String userid);
+    void updateUserSort(@Param("sort") String sort, @Param("userid") String userid);
 
     /**
      * DeleteAll処理②
@@ -31,6 +31,6 @@ public interface UserMapper {
      * @param userid
      */
     @Delete("DELETE from GoogleUser WHERE userid = #{userid}")
-    public void deleteAll(@Param("userid") String userid);
+    void deleteAll(@Param("userid") String userid);
     
 }

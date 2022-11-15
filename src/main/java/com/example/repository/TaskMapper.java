@@ -20,7 +20,7 @@ public interface TaskMapper {
 	 * @return
 	 */
 	@Select("SELECT * FROM Task")
-	public List<Task> selectAllTasks();
+	List<Task> selectAllTasks();
 	
 	
 	/**
@@ -34,9 +34,9 @@ public interface TaskMapper {
 	        "WHEN scheduledDate = '' THEN '1' " +//空文字最後
 	        "ELSE '0' " +
 	    "END, scheduledDate ASC, startTime ASC")
-	public List<Task> selectUndoneTasks(@Param("userID") String userID);
-	
-	
+	List<Task> selectUndoneTasks(@Param("userID") String userID);
+
+
 	/**
 	 * select　undoneのみ　priority順
 	 * @param userID
@@ -48,9 +48,9 @@ public interface TaskMapper {
 	        "WHEN priority = '' THEN '1' " +//空文字最後
 	        "ELSE '0' " +
 	    "END, priority ASC, scheduledDate ASC")
-	public List<Task> selectUndoneTasksByPriority(@Param("userID") String userID);
-	
-	
+	List<Task> selectUndoneTasksByPriority(@Param("userID") String userID);
+
+
 	/**
 	 * select undone,todayのみ startTime順
 	 * @param userID
@@ -62,7 +62,7 @@ public interface TaskMapper {
 	        "WHEN startTime = '' THEN '1' " +//空文字最後
 	        "ELSE '0' " +
 	    "END, startTime ASC")
-	public List<Task> selectTodayTask(@Param("userID") String userID);
+	List<Task> selectTodayTask(@Param("userID") String userID);
 	
 	
 	/**
@@ -71,7 +71,7 @@ public interface TaskMapper {
 	 * @return
 	 */
 	@Select("SELECT * FROM Task WHERE done = true AND userID = #{userID} ORDER BY completionDate ASC")
-	public List<Task> selectDoneTasks(@Param("userID") String userID);
+	List<Task> selectDoneTasks(@Param("userID") String userID);
 	
 	
 	/**
@@ -80,7 +80,7 @@ public interface TaskMapper {
 	 * @return
 	 */
 	@Select("SELECT * FROM Task WHERE taskID = #{taskID}")
-	public Task selectOne(int taskID);
+	Task selectOne(int taskID);
 	
 	
 	/**
@@ -88,7 +88,7 @@ public interface TaskMapper {
 	 * @param task
 	 */
 	@Insert("INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (#{userID}, #{taskName}, #{estimatedTime}, #{scheduledDate}, #{startTime})")
-	public void insertOneTask(Task task);
+	void insertOneTask(Task task);
 	
 	
 	/**
@@ -102,7 +102,7 @@ public interface TaskMapper {
 	    "startTime = #{startTime}, "+
 	    "priority = #{priority} "+
 	    "WHERE taskID = #{taskID}")
-	public void updateOneTask(Task task);
+	void updateOneTask(Task task);
 	
 	
 	/**
@@ -112,7 +112,7 @@ public interface TaskMapper {
 	 * @param taskID
 	 */
 	@Update("UPDATE Task SET done = true, completionDate = CURRENT_DATE WHERE taskID = #{taskID}")
-	public void done(int taskID);
+	void done(int taskID);
 	
 	
 	/**
@@ -122,7 +122,7 @@ public interface TaskMapper {
 	 * @param taskID
 	 */
 	@Update("UPDATE Task SET done = false, completionDate = null WHERE taskID = #{taskID}")
-	public void undone(int taskID);
+	void undone(int taskID);
 	
 	
 	/**
@@ -130,7 +130,7 @@ public interface TaskMapper {
 	 * @param taskID
 	 */
 	@Delete("DELETE from Task WHERE taskID = #{taskID}")
-	public void deleteTask(int taskID);
+	void deleteTask(int taskID);
 
 
 	/**
@@ -140,8 +140,8 @@ public interface TaskMapper {
 	 * @param userID
 	 */
 	@Delete("DELETE from Task WHERE userID = #{userID}")
-	public void deleteAll(@Param("userID") String userID);
-		    
+	void deleteAll(@Param("userID") String userID);
+
 
 
 }

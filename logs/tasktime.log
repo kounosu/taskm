@@ -1,481 +1,514 @@
-2022-11-06 02:30:31.091  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h28s663ms).
-2022-11-06 03:50:55.825  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m24s829ms).
-2022-11-06 03:55:56.019  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m30s190ms).
-2022-11-06 04:01:22.808  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s776ms).
-2022-11-06 04:03:13.506  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s697ms).
-2022-11-06 04:08:16.709  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m33s200ms).
-2022-11-06 04:25:10.491  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s769ms).
-2022-11-06 04:26:38.586  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s94ms).
-2022-11-06 04:36:24.039  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m15s450ms).
-2022-11-06 04:48:06.896  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m42s848ms).
-2022-11-06 06:11:43.271  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m36s366ms).
-2022-11-06 06:13:41.961  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s677ms), soft-evicting connections from pool.
-2022-11-06 06:37:35.297  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m53s234ms).
-2022-11-06 06:42:48.521  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s224ms).
-2022-11-06 08:43:44.540  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s20ms).
-2022-11-06 09:43:28.177  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m43s637ms).
-2022-11-06 09:56:57.928  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m29s656ms).
-2022-11-06 09:58:27.459  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s623ms).
-2022-11-06 10:14:03.083  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s625ms).
-2022-11-06 14:08:45.202  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h54m42s118ms).
-2022-11-06 14:25:45.416  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s163ms).
-2022-11-06 14:26:49.955  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s538ms).
-2022-11-06 14:43:05.516  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s553ms).
-2022-11-06 15:02:50.556  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m45s7ms).
-2022-11-06 15:22:05.568  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m14s973ms).
-2022-11-06 15:39:34.759  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s168ms).
-2022-11-06 15:57:30.927  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m56s168ms).
-2022-11-06 16:17:05.815  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m4s867ms).
-2022-11-06 16:39:07.083  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m1s226ms).
-2022-11-06 16:57:36.207  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s111ms).
-2022-11-06 16:59:53.673  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m17s466ms).
-2022-11-06 17:51:17.774  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m24s101ms).
-2022-11-06 18:02:13.577  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s776ms).
-2022-11-06 20:08:16.094  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2s472ms).
-2022-11-06 20:58:52.136  WARN 57627 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m5s673ms).
-2022-11-06 21:03:10.876  INFO 57627 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-06 21:03:10.886  INFO 57627 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-11-06 21:03:11.350  INFO 65353 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 65353 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-11-06 21:03:11.351 DEBUG 65353 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-11-06 21:03:11.351  INFO 65353 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-11-06 21:03:11.633  INFO 65353 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-06 21:03:11.633  INFO 65353 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-06 21:03:12.629  INFO 65353 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 21:03:12.654  INFO 65353 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2022-11-06 21:03:13.829  INFO 65353 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-06 21:03:13.846  INFO 65353 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-06 21:03:13.846  INFO 65353 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-11-06 21:03:13.918  INFO 65353 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-06 21:03:13.918  INFO 65353 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2284 ms
-2022-11-06 21:03:14.058  INFO 65353 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-06 21:03:14.393  INFO 57627 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-11-06 21:03:14.619  INFO 57627 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 57627 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-11-06 21:03:14.620 DEBUG 57627 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-11-06 21:03:14.620  INFO 57627 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-11-06 21:03:14.746  INFO 57627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-06 21:03:14.748  INFO 57627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
-2022-11-06 21:03:14.836  INFO 57627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-06 21:03:14.836  INFO 57627 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-06 21:03:14.837  INFO 57627 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-11-06 21:03:14.847  INFO 57627 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-06 21:03:14.848  INFO 57627 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
-2022-11-06 21:03:14.874  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-11-06 21:03:23.484  WARN 57627 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Default transaction isolation level detection failed (このコネクションは既にクローズされています。).
-2022-11-06 21:03:23.495 ERROR 57627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Error thrown while acquiring connection from data source
-
-org.postgresql.util.PSQLException: このコネクションは既にクローズされています。
-	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:881) ~[postgresql-42.3.1.jar:42.3.1]
-	at org.postgresql.jdbc.PgConnection.setTransactionIsolation(PgConnection.java:940) ~[postgresql-42.3.1.jar:42.3.1]
-	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:419) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
-	at com.example.TaskApplication.main(TaskApplication.java:11) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
-
-2022-11-06 21:03:23.499 ERROR 57627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Exception during pool initialization.
-
-org.postgresql.util.PSQLException: このコネクションは既にクローズされています。
-	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:881) ~[postgresql-42.3.1.jar:42.3.1]
-	at org.postgresql.jdbc.PgConnection.setTransactionIsolation(PgConnection.java:940) ~[postgresql-42.3.1.jar:42.3.1]
-	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:419) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330) ~[spring-jdbc-5.3.13.jar:5.3.13]
-	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:143) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:103) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:95) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-2.6.1.jar:2.6.1]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
-	at com.example.TaskApplication.main(TaskApplication.java:11) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
-
-2022-11-06 21:03:23.505  INFO 57627 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 21:03:23.512  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-11-06 21:03:24.537  INFO 65353 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-06 21:03:24.627  INFO 65353 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-06 21:03:24.742  INFO 65353 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-11-06 21:03:25.041  INFO 65353 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-06 21:03:25.542  INFO 65353 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-11-06 21:03:26.612  INFO 65353 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-06 21:03:26.628  INFO 65353 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-06 21:03:26.927  WARN 65353 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-06 21:03:27.267  INFO 65353 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a99684b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c44466c, org.springframework.security.web.header.HeaderWriterFilter@7f8f9316, org.springframework.security.web.csrf.CsrfFilter@658a5a74, org.springframework.security.web.authentication.logout.LogoutFilter@2f945106, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1eb777e2, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6e5b5bcc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384ced5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39529f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3730ea96, org.springframework.security.web.session.SessionManagementFilter@38f6f371, org.springframework.security.web.access.ExceptionTranslationFilter@29dede7c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@684f273f]
-2022-11-06 21:03:27.483 DEBUG 65353 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-11-06 21:03:27.599 DEBUG 65353 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-11-06 21:03:27.642 DEBUG 65353 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-11-06 21:03:27.656 DEBUG 65353 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-11-06 21:03:28.174  WARN 65353 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-11-06 21:03:28.222  INFO 65353 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-06 21:03:28.235  INFO 65353 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 17.339 seconds (JVM running for 18.229)
-2022-11-06 21:03:28.449  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2022-11-06 21:03:28.450  INFO 57627 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-11-06 21:03:29.292  INFO 57627 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-06 21:03:29.293  INFO 57627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-06 21:03:29.347  WARN 57627 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-06 21:03:29.371  INFO 57627 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@640930b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4116c28f, org.springframework.security.web.header.HeaderWriterFilter@41aa8b6d, org.springframework.security.web.csrf.CsrfFilter@5b6c056, org.springframework.security.web.authentication.logout.LogoutFilter@25b8d317, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@26b25d50, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@254f1df8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af0558e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f144e5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79f63522, org.springframework.security.web.session.SessionManagementFilter@721118eb, org.springframework.security.web.access.ExceptionTranslationFilter@743ffa51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5279e371]
-2022-11-06 21:03:29.406 DEBUG 57627 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-11-06 21:03:29.415 DEBUG 57627 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-11-06 21:03:29.425 DEBUG 57627 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-11-06 21:03:29.429 DEBUG 57627 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-11-06 21:03:29.480  INFO 57627 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-11-06 21:03:29.489  WARN 57627 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2022-11-06 21:03:29.490  INFO 57627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-06 21:03:29.491  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2022-11-06 21:03:32.429  INFO 57627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2022-11-06 21:03:32.431  INFO 57627 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-11-06 21:03:32.444  INFO 57627 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-11-06 21:03:32.484 ERROR 57627 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2022-11-06 21:03:43.436  INFO 65353 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-06 21:03:43.436  INFO 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-06 21:03:43.436 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2022-11-06 21:03:43.437 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2022-11-06 21:03:43.437 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18139523
-2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3325722
-2022-11-06 21:03:43.438 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-11-06 21:03:43.438  INFO 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-11-06 21:03:43.483 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
-2022-11-06 21:03:43.487 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
-2022-11-06 21:03:43.574 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:03:43.898 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:00.755 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://www.googleapis.com/oauth2/v3/certs
-2022-11-06 21:04:00.759 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2022-11-06 21:04:01.452 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
-2022-11-06 21:04:01.455 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json;charset=UTF-8"
-2022-11-06 21:04:01.585 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:01.586 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:01.903 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:01.925 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:02.333 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:02.338 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:02.339 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:02.644 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:02.648 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:02.648 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:02.951 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 3
-2022-11-06 21:04:02.973 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:03.058 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:03.086 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:03.091 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:03.100 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:07.273 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/1", parameters={masked}
-2022-11-06 21:04:07.274 DEBUG 65353 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
-2022-11-06 21:04:07.558 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
-2022-11-06 21:04:07.562 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 1(Integer)
-2022-11-06 21:04:08.076 DEBUG 65353 --- [http-nio-8080-exec-7] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
-2022-11-06 21:04:08.081 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2022-11-06 21:04:08.083 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-11-06 21:04:08.090 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:08.091 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:08.468 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:08.468 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:08.893 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:08.894 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:08.895 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:09.163 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:09.164 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:09.165 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:09.516 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
-2022-11-06 21:04:09.519 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:09.542 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:09.557 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:09.558 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:09.560 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:10.959 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2022-11-06 21:04:10.960 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:10.963 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2022-11-06 21:04:10.963 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-11-06 21:04:10.974 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2022-11-06 21:04:10.977 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-11-06 21:04:10.997 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-11-06 21:04:10.998 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Nov 06 21:04:10 JST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
-2022-11-06 21:04:11.040 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2022-11-06 21:04:12.743 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/2", parameters={masked}
-2022-11-06 21:04:12.745 DEBUG 65353 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
-2022-11-06 21:04:13.514 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
-2022-11-06 21:04:13.515 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 2(Integer)
-2022-11-06 21:04:14.040 DEBUG 65353 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
-2022-11-06 21:04:14.042 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2022-11-06 21:04:14.042 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-11-06 21:04:14.049 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:14.050 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:14.564 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:14.565 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:15.091 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:15.530 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:15.531 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:15.941 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:15.942 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:15.943 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:16.291 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
-2022-11-06 21:04:16.294 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:16.314 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:16.333 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:16.334 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:16.337 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:18.418 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/3", parameters={masked}
-2022-11-06 21:04:18.420 DEBUG 65353 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
-2022-11-06 21:04:18.806 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
-2022-11-06 21:04:18.807 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 3(Integer)
-2022-11-06 21:04:19.134 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
-2022-11-06 21:04:19.136 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2022-11-06 21:04:19.137 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-11-06 21:04:19.144 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:19.144 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:19.146 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:19.146 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:19.425 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:19.426 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:19.426 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:19.784 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:19.785 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:19.785 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:20.138 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
-2022-11-06 21:04:20.141 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:20.155 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:20.174 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:20.175 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:20.177 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:21.764 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
-2022-11-06 21:04:21.764 DEBUG 65353 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
-2022-11-06 21:04:21.773 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:21.800 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:21.817 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:21.818 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:21.822 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:32.619 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
-2022-11-06 21:04:32.619 DEBUG 65353 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
-2022-11-06 21:04:32.941 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
-2022-11-06 21:04:32.945 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 1.0(Double), 2022-11-06(String), 00:00(String)
-2022-11-06 21:04:33.269 DEBUG 65353 --- [http-nio-8080-exec-9] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
-2022-11-06 21:04:33.272 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2022-11-06 21:04:33.272 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-11-06 21:04:33.278 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:33.278 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:33.279 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:33.279 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:33.767 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:33.768 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:33.768 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:34.115 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:34.116 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:34.116 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:34.387 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
-2022-11-06 21:04:34.391 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:34.403 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:34.420 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:34.421 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:34.423 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:36.769 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
-2022-11-06 21:04:36.770 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
-2022-11-06 21:04:36.771 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:36.781 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:36.797 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:36.797 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:36.801 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:44.705 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
-2022-11-06 21:04:44.706 DEBUG 65353 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
-2022-11-06 21:04:45.499 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
-2022-11-06 21:04:45.510 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), 篠原(String), 1.0(Double), 2022-11-06(String), 00:00(String)
-2022-11-06 21:04:45.837 DEBUG 65353 --- [http-nio-8080-exec-5] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
-2022-11-06 21:04:45.838 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
-2022-11-06 21:04:45.839 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-11-06 21:04:45.845 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:04:45.846 DEBUG 65353 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:04:45.847 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:04:45.847 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:46.348 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:04:46.876 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:04:46.877 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:47.400 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:04:47.401 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:04:47.401 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:04:47.697 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
-2022-11-06 21:04:47.701 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:47.715 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:47.728 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:47.728 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:47.732 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:51.929 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
-2022-11-06 21:04:51.930 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
-2022-11-06 21:04:52.336 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
-2022-11-06 21:04:52.342 DEBUG 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.controllers.ErrorControllerAdvice#otherError(Exception, Model)
-2022-11-06 21:04:52.343  WARN 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]]
-2022-11-06 21:04:52.343 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="/error/basic_error.html"; model={message=nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]}]
-2022-11-06 21:04:52.344 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:04:52.351 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:04:52.367 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:04:52.368 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:04:52.372 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:01.764 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:12:01.765 DEBUG 65353 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:12:02.082 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:12:02.082 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:02.389 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:12:02.390 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:12:02.391 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:02.645 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:12:02.646 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:12:02.646 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:03.004 DEBUG 65353 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
-2022-11-06 21:12:03.006 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:12:03.021 DEBUG 65353 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:03.038 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:12:03.040 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:12:03.043 DEBUG 65353 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:04.807 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/done", parameters={}
-2022-11-06 21:12:04.807 DEBUG 65353 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayDone(Model, OAuth2User)
-2022-11-06 21:12:05.046 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
-2022-11-06 21:12:05.046 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:05.286 DEBUG 65353 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
-2022-11-06 21:12:05.288 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:12:05.293 DEBUG 65353 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:05.307 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:12:05.308 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:12:05.312 DEBUG 65353 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:06.242 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:12:06.242 DEBUG 65353 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:12:06.456 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:12:06.457 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:06.701 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:12:06.702 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:12:06.702 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:06.999 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:12:07.000 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:12:07.001 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:07.205 DEBUG 65353 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
-2022-11-06 21:12:07.207 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:12:07.217 DEBUG 65353 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:07.230 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:12:07.231 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:12:07.234 DEBUG 65353 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:09.053 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
-2022-11-06 21:12:09.054 DEBUG 65353 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
-2022-11-06 21:12:09.285 DEBUG 65353 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
-2022-11-06 21:12:09.287 DEBUG 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.controllers.ErrorControllerAdvice#otherError(Exception, Model)
-2022-11-06 21:12:09.287  WARN 65353 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]]
-2022-11-06 21:12:09.288 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="/error/basic_error.html"; model={message=nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]}]
-2022-11-06 21:12:09.289 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:12:09.294 DEBUG 65353 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:09.314 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:12:09.315 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:12:09.318 DEBUG 65353 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:11.503 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-06 21:12:11.503 DEBUG 65353 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-06 21:12:11.765 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-06 21:12:11.766 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:11.966 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-06 21:12:11.967 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-06 21:12:11.967 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:12.322 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-06 21:12:12.323 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-06 21:12:12.323 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-06 21:12:12.630 DEBUG 65353 --- [http-nio-8080-exec-10] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
-2022-11-06 21:12:12.633 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-06 21:12:12.645 DEBUG 65353 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:12:12.662 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-06 21:12:12.663 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-06 21:12:12.666 DEBUG 65353 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-06 21:22:22.601  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-11-06 21:22:22.640  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-06 21:22:22.643  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-11-06 21:22:23.085  INFO 65353 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-14 22:50:36.379  INFO 14791 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 14791 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-11-14 22:50:36.386 DEBUG 14791 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-11-14 22:50:36.386  INFO 14791 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-11-14 22:50:36.758  INFO 14791 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-14 22:50:36.758  INFO 14791 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-14 22:50:37.920  INFO 14791 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 22:50:37.945  INFO 14791 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2022-11-14 22:50:39.090  INFO 14791 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-14 22:50:39.105  INFO 14791 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-14 22:50:39.106  INFO 14791 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-14 22:50:39.214  INFO 14791 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-14 22:50:39.214  INFO 14791 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2455 ms
+2022-11-14 22:50:39.400  INFO 14791 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-14 22:50:43.154  INFO 14791 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-14 22:50:43.241  INFO 14791 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 22:50:43.338  INFO 14791 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-11-14 22:50:43.598  INFO 14791 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 22:50:44.021  INFO 14791 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-11-14 22:50:44.822  INFO 14791 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 22:50:44.837  INFO 14791 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 22:50:45.173  WARN 14791 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 22:50:45.471  INFO 14791 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21c0a873, org.springframework.security.web.context.SecurityContextPersistenceFilter@77a51909, org.springframework.security.web.header.HeaderWriterFilter@259604fd, org.springframework.security.web.csrf.CsrfFilter@7b42c93a, org.springframework.security.web.authentication.logout.LogoutFilter@606bdee2, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@52ace137, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@330aea3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ff291ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf3d54d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120e8ec5, org.springframework.security.web.session.SessionManagementFilter@4ab47bcc, org.springframework.security.web.access.ExceptionTranslationFilter@5b4a18be, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49a8c4c4]
+2022-11-14 22:50:45.692 DEBUG 14791 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-14 22:50:45.809 DEBUG 14791 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2022-11-14 22:50:45.850 DEBUG 14791 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-14 22:50:45.864 DEBUG 14791 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-14 22:50:46.442  INFO 14791 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-14 22:50:46.482  INFO 14791 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-14 22:50:46.497  INFO 14791 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 10.897 seconds (JVM running for 11.901)
+2022-11-14 22:50:55.702  INFO 14791 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-14 22:50:55.703  INFO 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-14 22:50:55.703 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-14 22:50:55.704 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-14 22:50:55.704 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-14 22:50:55.705 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@768267cb
+2022-11-14 22:50:55.705 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@40c48d0f
+2022-11-14 22:50:55.705 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-14 22:50:55.706  INFO 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-11-14 22:50:55.781 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2022-11-14 22:50:55.788 DEBUG 14791 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
+2022-11-14 22:50:55.941 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:50:56.443 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:08.020 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://www.googleapis.com/oauth2/v3/certs
+2022-11-14 22:51:08.025 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2022-11-14 22:51:08.263 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2022-11-14 22:51:08.265 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json;charset=UTF-8"
+2022-11-14 22:51:08.379 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 22:51:08.379 DEBUG 14791 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 22:51:08.745 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 22:51:08.774 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:09.042 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 22:51:09.045 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 22:51:09.045 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:09.372 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 22:51:09.375 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 22:51:09.375 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:09.661 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-14 22:51:09.679 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:51:09.796 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:51:09.803 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:51:09.813 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:09.818 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:11.924 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-11-14 22:51:11.925 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:51:11.928 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-11-14 22:51:11.929 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-11-14 22:51:11.946 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-11-14 22:51:11.949 DEBUG 14791 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-14 22:51:11.974 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 22:51:11.975 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 14 22:51:11 JST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-11-14 22:51:12.049 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-11-14 22:51:39.204 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/4", parameters={masked}
+2022-11-14 22:51:39.205 DEBUG 14791 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-14 22:51:39.443 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-14 22:51:39.446 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 4(Integer)
+2022-11-14 22:51:39.654 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-14 22:51:39.660 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 22:51:39.662 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 22:51:39.672 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 22:51:39.673 DEBUG 14791 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 22:51:39.674 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 22:51:39.674 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:39.933 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 22:51:39.933 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 22:51:39.934 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:40.133 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 22:51:40.134 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 22:51:40.135 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:40.378 DEBUG 14791 --- [http-nio-8080-exec-9] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-14 22:51:40.382 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:51:40.414 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:40.425 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:51:40.426 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:51:40.431 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:43.133 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/5", parameters={masked}
+2022-11-14 22:51:43.134 DEBUG 14791 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-14 22:51:43.362 DEBUG 14791 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-14 22:51:43.364 DEBUG 14791 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 5(Integer)
+2022-11-14 22:51:43.610 DEBUG 14791 --- [http-nio-8080-exec-1] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-14 22:51:43.615 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 22:51:43.616 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 22:51:43.623 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 22:51:43.624 DEBUG 14791 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 22:51:43.625 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 22:51:43.625 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:43.842 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 22:51:43.844 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 22:51:43.844 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:44.070 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 22:51:44.071 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 22:51:44.072 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:51:44.374 DEBUG 14791 --- [http-nio-8080-exec-2] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-11-14 22:51:44.378 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:51:44.404 DEBUG 14791 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:51:44.417 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:51:44.418 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:51:44.422 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:01.976 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/today", parameters={}
+2022-11-14 22:52:01.976 DEBUG 14791 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayToday(Model, OAuth2User)
+2022-11-14 22:52:02.201 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectTodayTask         : ==>  Preparing: SELECT * FROM Task WHERE scheduledDate = to_char(CURRENT_DATE, 'YYYY-MM-DD') AND done = false AND userID = ? ORDER BY CASE WHEN startTime IS NULL THEN '2' WHEN startTime = '' THEN '1' ELSE '0' END, startTime ASC
+2022-11-14 22:52:02.202 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectTodayTask         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:02.436 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectTodayTask         : <==      Total: 0
+2022-11-14 22:52:02.439 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:02.469 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:02.481 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:02.483 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:02.488 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:04.383 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/done", parameters={}
+2022-11-14 22:52:04.383 DEBUG 14791 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayDone(Model, OAuth2User)
+2022-11-14 22:52:04.591 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectDoneTasks         : ==>  Preparing: SELECT * FROM Task WHERE done = true AND userID = ? ORDER BY completionDate ASC
+2022-11-14 22:52:04.592 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectDoneTasks         : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:04.805 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectDoneTasks         : <==      Total: 0
+2022-11-14 22:52:04.808 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:04.816 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:04.830 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:04.832 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:04.836 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:06.672 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 22:52:06.673 DEBUG 14791 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 22:52:06.892 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 22:52:06.892 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:07.091 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 22:52:07.093 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 22:52:07.093 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:07.412 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 22:52:07.413 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 22:52:07.414 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:07.719 DEBUG 14791 --- [http-nio-8080-exec-8] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-11-14 22:52:07.724 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:07.742 DEBUG 14791 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:07.758 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:07.760 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:07.763 DEBUG 14791 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:09.068 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
+2022-11-14 22:52:09.069 DEBUG 14791 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
+2022-11-14 22:52:09.080 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:09.118 DEBUG 14791 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:09.130 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:09.131 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:09.133 DEBUG 14791 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:14.253 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
+2022-11-14 22:52:14.254 DEBUG 14791 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
+2022-11-14 22:52:14.681 DEBUG 14791 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-11-14 22:52:14.684 DEBUG 14791 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), a(String), 0.5(Double), 2022-11-14(String), 00:00(String)
+2022-11-14 22:52:14.989 DEBUG 14791 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-11-14 22:52:14.992 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 22:52:14.993 DEBUG 14791 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 22:52:14.999 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 22:52:14.999 DEBUG 14791 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 22:52:15.000 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 22:52:15.000 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:15.207 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 22:52:15.208 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 22:52:15.208 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:15.501 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 22:52:15.502 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 22:52:15.502 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 22:52:15.809 DEBUG 14791 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-14 22:52:15.813 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:15.834 DEBUG 14791 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:15.854 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:15.855 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:15.858 DEBUG 14791 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:18.646 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-14 22:52:18.647 DEBUG 14791 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-14 22:52:18.883 DEBUG 14791 --- [http-nio-8080-exec-5] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 22:52:18.891 DEBUG 14791 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.controllers.ErrorControllerAdvice#otherError(Exception, Model)
+2022-11-14 22:52:18.892  WARN 14791 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]]
+2022-11-14 22:52:18.893 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="/error/basic_error.html"; model={message=nested exception is org.apache.ibatis.binding.BindingException: Parameter 'sort' not found. Available parameters are [arg1, arg0, param1, param2]}]
+2022-11-14 22:52:18.895 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 22:52:18.903 DEBUG 14791 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:52:18.915 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 22:52:18.917 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 22:52:18.922 DEBUG 14791 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 22:53:16.605  INFO 14791 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 22:53:16.609  INFO 14791 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-14 22:53:18.801  INFO 14791 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-14 23:00:46.494  INFO 14947 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 14947 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-11-14 23:00:46.496 DEBUG 14947 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-11-14 23:00:46.497  INFO 14947 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-11-14 23:00:46.940  INFO 14947 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-14 23:00:46.940  INFO 14947 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-14 23:00:47.943  INFO 14947 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 23:00:47.966  INFO 14947 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-11-14 23:00:48.991  INFO 14947 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-14 23:00:49.006  INFO 14947 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-14 23:00:49.006  INFO 14947 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-14 23:00:49.112  INFO 14947 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-14 23:00:49.112  INFO 14947 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2171 ms
+2022-11-14 23:00:49.325  INFO 14947 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-14 23:00:52.525  INFO 14947 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-14 23:00:52.602  INFO 14947 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 23:00:52.678  INFO 14947 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-11-14 23:00:52.922  INFO 14947 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 23:00:53.282  INFO 14947 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-11-14 23:00:53.937  INFO 14947 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 23:00:53.950  INFO 14947 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 23:00:54.226  WARN 14947 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 23:00:54.510  INFO 14947 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dea6105, org.springframework.security.web.context.SecurityContextPersistenceFilter@120e8ec5, org.springframework.security.web.header.HeaderWriterFilter@2dc3d7d1, org.springframework.security.web.csrf.CsrfFilter@60d5eb55, org.springframework.security.web.authentication.logout.LogoutFilter@5e38ab37, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@44b01eef, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2578dcf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cbe026f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22b6fe70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e3724fd, org.springframework.security.web.session.SessionManagementFilter@7c6c7c3b, org.springframework.security.web.access.ExceptionTranslationFilter@330aea3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40577e48]
+2022-11-14 23:00:54.702 DEBUG 14947 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-14 23:00:54.804 DEBUG 14947 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2022-11-14 23:00:54.842 DEBUG 14947 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-14 23:00:54.853 DEBUG 14947 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-14 23:00:55.360  INFO 14947 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-14 23:00:55.398  INFO 14947 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-14 23:00:55.413  INFO 14947 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 9.581 seconds (JVM running for 10.383)
+2022-11-14 23:01:08.322  INFO 14947 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-14 23:01:08.323  INFO 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-14 23:01:08.324 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-14 23:01:08.324 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-14 23:01:08.324 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-14 23:01:08.325 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1dbb9f73
+2022-11-14 23:01:08.325 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@746946e8
+2022-11-14 23:01:08.326 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-14 23:01:08.326  INFO 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-11-14 23:01:08.359 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-14 23:01:08.367 DEBUG 14947 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-14 23:01:08.752 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:01:08.770 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.UserMapper.updateUserSort          : ==> Parameters: priority(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:01:08.991 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:01:09.005 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:09.011 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:09.021 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:09.021 DEBUG 14947 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:09.022 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:09.023 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:09.276 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:09.280 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:09.281 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:09.536 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:09.538 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:01:09.539 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:09.816 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 1
+2022-11-14 23:01:09.831 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:10.375 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:10.390 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:10.396 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:10.415 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:19.292 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/app/top/date", parameters={masked}
+2022-11-14 23:01:19.294 DEBUG 14947 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByDate(OAuth2User, Model)
+2022-11-14 23:01:19.643 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:01:19.644 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : ==> Parameters: date(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:01:19.909 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:01:19.911 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:19.912 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:19.918 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:19.919 DEBUG 14947 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:19.920 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:19.920 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:20.258 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:20.260 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:20.260 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:20.565 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:20.566 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:01:20.567 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:20.877 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-14 23:01:20.880 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:20.912 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:20.924 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:20.926 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:20.931 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:24.833 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-14 23:01:24.834 DEBUG 14947 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-14 23:01:25.082 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:01:25.083 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : ==> Parameters: priority(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:01:25.292 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:01:25.294 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:25.295 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:25.303 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:25.303 DEBUG 14947 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:25.305 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:25.305 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:25.511 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:25.512 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:25.513 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:25.713 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:25.714 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:01:25.715 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:25.937 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 1
+2022-11-14 23:01:25.940 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:25.970 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:25.983 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:25.985 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:25.988 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:36.888 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/app/new", parameters={}
+2022-11-14 23:01:36.890 DEBUG 14947 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayNew(Model, Task, OAuth2User)
+2022-11-14 23:01:36.911 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:36.950 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:36.963 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:36.964 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:36.967 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:45.581 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/app/new", parameters={masked}
+2022-11-14 23:01:45.581 DEBUG 14947 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#register(Model, OAuth2User, Task, BindingResult)
+2022-11-14 23:01:45.947 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.insertOneTask  : ==>  Preparing: INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (?, ?, ?, ?, ?)
+2022-11-14 23:01:45.953 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.insertOneTask  : ==> Parameters: kounosu1771036@gmail.com(String), 篠原(String), 1.5(Double), 2022-11-14(String), 00:00(String)
+2022-11-14 23:01:46.167 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.TaskMapper.insertOneTask  : <==    Updates: 1
+2022-11-14 23:01:46.169 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:46.171 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:46.180 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:46.180 DEBUG 14947 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:46.181 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:46.181 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:46.473 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:46.476 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:46.476 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:46.719 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:46.721 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:01:46.723 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:46.930 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 2
+2022-11-14 23:01:46.933 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:46.959 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:46.980 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:46.982 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:46.984 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:50.147 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/app/top/date", parameters={masked}
+2022-11-14 23:01:50.147 DEBUG 14947 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByDate(OAuth2User, Model)
+2022-11-14 23:01:50.464 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:01:50.465 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.UserMapper.updateUserSort          : ==> Parameters: date(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:01:50.736 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:01:50.737 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:50.738 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:50.743 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:50.743 DEBUG 14947 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:50.744 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:50.745 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:50.948 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:50.949 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:50.949 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:51.204 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:51.205 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:01:51.206 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:51.442 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-14 23:01:51.445 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:51.469 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:51.476 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:51.478 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:51.481 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:54.230 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-14 23:01:54.230 DEBUG 14947 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-14 23:01:54.561 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:01:54.562 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : ==> Parameters: priority(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:01:54.869 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:01:54.871 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:01:54.872 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:01:54.880 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:01:54.881 DEBUG 14947 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:01:54.882 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:01:54.882 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:55.175 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:01:55.176 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:01:55.177 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:55.483 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:01:55.484 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:01:55.485 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:01:55.792 DEBUG 14947 --- [http-nio-8080-exec-9] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 2
+2022-11-14 23:01:55.795 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:01:55.815 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:01:55.826 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:01:55.828 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:01:55.831 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:14.977 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:14.977 DEBUG 14947 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:15.198 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:15.199 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:15.450 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:15.452 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:15.453 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:15.758 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:15.759 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:02:15.759 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:16.065 DEBUG 14947 --- [http-nio-8080-exec-2] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 2
+2022-11-14 23:02:16.069 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:16.089 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:16.102 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:16.103 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:16.109 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:22.729 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/app/top/date", parameters={masked}
+2022-11-14 23:02:22.730 DEBUG 14947 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByDate(OAuth2User, Model)
+2022-11-14 23:02:23.028 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:02:23.029 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : ==> Parameters: date(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:02:23.336 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:02:23.338 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:02:23.339 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:02:23.346 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:23.347 DEBUG 14947 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:23.348 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:23.348 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:23.642 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:23.642 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:23.643 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:23.950 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:23.951 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:02:23.951 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:24.207 DEBUG 14947 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-14 23:02:24.209 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:24.227 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:24.237 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:24.238 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:24.242 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:26.734 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/app/top/priority", parameters={masked}
+2022-11-14 23:02:26.734 DEBUG 14947 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByPriority(OAuth2User, Model)
+2022-11-14 23:02:27.020 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:02:27.021 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : ==> Parameters: priority(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:02:27.226 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:02:27.228 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:02:27.229 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:02:27.235 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:27.236 DEBUG 14947 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:27.237 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:27.237 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:27.482 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:27.482 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:27.482 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:27.739 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:27.740 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN priority IS NULL THEN '2' WHEN priority = '' THEN '1' ELSE '0' END, priority ASC, scheduledDate ASC
+2022-11-14 23:02:27.740 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:28.046 DEBUG 14947 --- [http-nio-8080-exec-8] c.e.r.T.selectUndoneTasksByPriority      : <==      Total: 2
+2022-11-14 23:02:28.049 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:28.067 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:28.080 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:28.081 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:28.083 DEBUG 14947 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:36.794 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/app/top/date", parameters={masked}
+2022-11-14 23:02:36.795 DEBUG 14947 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#sortByDate(OAuth2User, Model)
+2022-11-14 23:02:37.056 DEBUG 14947 --- [http-nio-8080-exec-10] c.e.r.UserMapper.updateUserSort          : ==>  Preparing: UPDATE GoogleUser SET sort = ? WHERE userid = ?
+2022-11-14 23:02:37.057 DEBUG 14947 --- [http-nio-8080-exec-10] c.e.r.UserMapper.updateUserSort          : ==> Parameters: date(String), kounosu1771036@gmail.com(String)
+2022-11-14 23:02:37.363 DEBUG 14947 --- [http-nio-8080-exec-10] c.e.r.UserMapper.updateUserSort          : <==    Updates: 1
+2022-11-14 23:02:37.384 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:02:37.385 DEBUG 14947 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:02:37.393 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:37.394 DEBUG 14947 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:37.395 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:37.395 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:37.672 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:37.673 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:37.673 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:37.978 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:37.979 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:02:37.980 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:38.193 DEBUG 14947 --- [http-nio-8080-exec-1] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 2
+2022-11-14 23:02:38.195 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:38.211 DEBUG 14947 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:38.222 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:38.224 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:38.227 DEBUG 14947 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:41.816 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/6", parameters={masked}
+2022-11-14 23:02:41.817 DEBUG 14947 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-14 23:02:42.176 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-14 23:02:42.177 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 6(Integer)
+2022-11-14 23:02:42.483 DEBUG 14947 --- [http-nio-8080-exec-3] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-14 23:02:42.484 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:02:42.485 DEBUG 14947 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:02:42.492 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:42.492 DEBUG 14947 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:42.493 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:42.493 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:42.791 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:42.792 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:42.792 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:43.098 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:43.099 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:02:43.099 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:43.407 DEBUG 14947 --- [http-nio-8080-exec-4] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
+2022-11-14 23:02:43.410 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:43.425 DEBUG 14947 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:43.439 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:43.440 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:43.443 DEBUG 14947 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:45.627 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/app/deleteTop/7", parameters={masked}
+2022-11-14 23:02:45.629 DEBUG 14947 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#deleteTop(int)
+2022-11-14 23:02:45.876 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : ==>  Preparing: DELETE from Task WHERE taskID = ?
+2022-11-14 23:02:45.876 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : ==> Parameters: 7(Integer)
+2022-11-14 23:02:46.076 DEBUG 14947 --- [http-nio-8080-exec-6] c.e.repository.TaskMapper.deleteTask     : <==    Updates: 1
+2022-11-14 23:02:46.078 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2022-11-14 23:02:46.079 DEBUG 14947 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-11-14 23:02:46.086 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-11-14 23:02:46.087 DEBUG 14947 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-11-14 23:02:46.088 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-11-14 23:02:46.088 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:46.310 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-11-14 23:02:46.311 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-11-14 23:02:46.311 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:46.510 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-11-14 23:02:46.512 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-11-14 23:02:46.512 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-11-14 23:02:46.747 DEBUG 14947 --- [http-nio-8080-exec-7] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-11-14 23:02:46.749 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-11-14 23:02:46.760 DEBUG 14947 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:02:46.773 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-11-14 23:02:46.774 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-14 23:02:46.777 DEBUG 14947 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 23:06:03.321  INFO 14947 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 23:06:03.325  INFO 14947 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-14 23:06:05.874  INFO 14947 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

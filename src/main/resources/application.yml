@@ -15,10 +15,9 @@ spring:
     #url: jdbc:postgresql://localhost:5432/task
     #username: ${SPRING_DATASOURCE_USERNAME}
     #password: ${SPRING_DATASOURCE_PASSWORD}
-    #url: jdbc:postgresql://ec2-44-196-174-238.compute-1.amazonaws.com:5432/dafbubeqeh60ra
+    url: jdbc:postgresql://ec2-44-196-174-238.compute-1.amazonaws.com:5432/dafbubeqeh60ra
     #username: kcjnpjcpzimsah
     #password: 574c784f73abfdbae5006073c822eb04200976bbb98ee3d4c7310619332179b2
-    url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
 
@@ -36,8 +35,8 @@ spring:
             client-id: ${CLIENT_ID}
             client-secret: ${CLIENT_SECRET}
              #↓本番環境(AWS内)ではコメントアウトを外す
-            redirect-uri: https://mk-100588-taskm.herokuapp.com/login/oauth2/code/google
-            #redirect-uri: http://localhost:8080/login/oauth2/code/google
+            #redirect-uri: https://mk-100588-taskm.herokuapp.com/login/oauth2/code/google
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
             scope:
             - email
             - https://www.googleapis.com/auth/userinfo.email
@@ -48,8 +47,8 @@ spring:
 
 #Tomcatのポート番号
 #AWS環境では8080なので以下コメントアウトする
-#server:
-    #port: 8080
+server:
+    port: 8080
 
 #Log Level
 logging:
