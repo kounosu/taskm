@@ -1,81 +1,83 @@
-2022-11-27 09:15:36.408  INFO 35234 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 35234 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
-2022-11-27 09:15:36.413 DEBUG 35234 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
-2022-11-27 09:15:36.413  INFO 35234 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
-2022-11-27 09:15:36.720  INFO 35234 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-27 09:15:36.721  INFO 35234 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-27 09:15:37.648  INFO 35234 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-27 09:15:37.666  INFO 35234 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2022-11-27 09:15:38.477  INFO 35234 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-27 09:15:38.488  INFO 35234 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-27 09:15:38.489  INFO 35234 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-11-27 09:15:38.574  INFO 35234 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-27 09:15:38.574  INFO 35234 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
-2022-11-27 09:15:38.705  INFO 35234 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-27 09:15:42.717  INFO 35234 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-27 09:15:42.775  INFO 35234 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-27 09:15:42.820  INFO 35234 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-11-27 09:15:42.950  INFO 35234 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-27 09:15:43.059  INFO 35234 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-11-27 09:15:43.802  INFO 35234 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-11-27 09:15:43.810  INFO 35234 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-11-27 09:15:43.987  WARN 35234 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-11-27 09:15:44.161  INFO 35234 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69ce8c52, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a432faa, org.springframework.security.web.header.HeaderWriterFilter@647ea0c3, org.springframework.security.web.csrf.CsrfFilter@7de1dfdb, org.springframework.security.web.authentication.logout.LogoutFilter@71f22f20, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5c3ad1f2, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@73a2d1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73d5d50d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35fbb607, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45aec4f7, org.springframework.security.web.session.SessionManagementFilter@43720078, org.springframework.security.web.access.ExceptionTranslationFilter@62e7e292, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71ef9edc]
-2022-11-27 09:15:44.306 DEBUG 35234 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-11-27 09:15:44.372 DEBUG 35234 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
-2022-11-27 09:15:44.398 DEBUG 35234 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-11-27 09:15:44.409 DEBUG 35234 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-11-27 09:15:44.764  INFO 35234 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-11-27 09:15:44.808  INFO 35234 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-27 09:15:44.822  INFO 35234 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 8.891 seconds (JVM running for 9.773)
-2022-11-27 09:15:55.058  INFO 35234 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-27 09:15:55.059  INFO 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-27 09:15:55.059 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2022-11-27 09:15:55.059 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2022-11-27 09:15:55.059 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2022-11-27 09:15:55.061 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c76408c
-2022-11-27 09:15:55.061 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@afdabe1
-2022-11-27 09:15:55.062 DEBUG 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-11-27 09:15:55.062  INFO 35234 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-11-27 09:15:55.118 DEBUG 35234 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
-2022-11-27 09:15:55.122 DEBUG 35234 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
-2022-11-27 09:15:55.202 DEBUG 35234 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-27 09:15:55.526 DEBUG 35234 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-27 09:16:02.189 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST https://www.googleapis.com/oauth2/v4/token
-2022-11-27 09:16:02.191 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2022-11-27 09:16:02.193 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [{grant_type=[authorization_code], code=[4/0AfgeXvuj3zO1J0TsswzHI4nsz5fAnOwxov5d36tx4y4PA5JCDRfT8OFldzjCuMHEwMM3Xg], redirect_uri=[http://localhost:8080/login/oauth2/code/google]}] as "application/x-www-form-urlencoded;charset=UTF-8"
-2022-11-27 09:16:02.674 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
-2022-11-27 09:16:02.677 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [org.springframework.security.oauth2.core.endpoint.OAuth2AccessTokenResponse] as "application/json;charset=utf-8"
-2022-11-27 09:16:02.802 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://www.googleapis.com/oauth2/v3/certs
-2022-11-27 09:16:02.802 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
-2022-11-27 09:16:03.150 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
-2022-11-27 09:16:03.151 DEBUG 35234 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json;charset=UTF-8"
-2022-11-27 09:16:03.245 DEBUG 35234 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
-2022-11-27 09:16:03.246 DEBUG 35234 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
-2022-11-27 09:16:03.549 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
-2022-11-27 09:16:03.572 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-27 09:16:03.897 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
-2022-11-27 09:16:03.905 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
-2022-11-27 09:16:03.905 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-27 09:16:04.222 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
-2022-11-27 09:16:04.224 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
-2022-11-27 09:16:04.224 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
-2022-11-27 09:16:04.433 DEBUG 35234 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 1
-2022-11-27 09:16:04.454 DEBUG 35234 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2022-11-27 09:16:04.513 DEBUG 35234 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-27 09:16:04.567 DEBUG 35234 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
-2022-11-27 09:16:04.574 DEBUG 35234 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-27 09:16:04.591 DEBUG 35234 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-11-27 09:16:06.852 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2022-11-27 09:16:06.853 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-11-27 09:16:06.855 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2022-11-27 09:16:06.856 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2022-11-27 09:16:06.866 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2022-11-27 09:16:06.867 DEBUG 35234 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-11-27 09:16:06.879 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-11-27 09:16:06.880 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Nov 27 09:16:06 JST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
-2022-11-27 09:16:06.914 DEBUG 35234 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2022-11-27 09:27:32.123  WARN 35234 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s233ms).
-2022-11-27 09:27:37.620  INFO 35234 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-11-27 09:27:37.659  INFO 35234 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-11-27 09:27:37.664  INFO 35234 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-11-27 09:27:38.494  INFO 35234 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-09 13:35:54.111  INFO 50291 --- [restartedMain] com.example.TaskApplication              : Starting TaskApplication using Java 17.0.2 on kounosuarenoAir with PID 50291 (/Users/kounosumotoki/workspace/taskm/target/classes started by kounosumotoki in /Users/kounosumotoki/workspace/taskm)
+2022-12-09 13:35:54.115 DEBUG 50291 --- [restartedMain] com.example.TaskApplication              : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-12-09 13:35:54.115  INFO 50291 --- [restartedMain] com.example.TaskApplication              : No active profile set, falling back to default profiles: default
+2022-12-09 13:35:54.444  INFO 50291 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-09 13:35:54.445  INFO 50291 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-09 13:35:55.478  INFO 50291 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-09 13:35:55.500  INFO 50291 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-12-09 13:35:56.516  INFO 50291 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-09 13:35:56.530  INFO 50291 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-09 13:35:56.530  INFO 50291 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-12-09 13:35:56.624  INFO 50291 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-09 13:35:56.625  INFO 50291 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2179 ms
+2022-12-09 13:35:56.771  INFO 50291 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-09 13:35:56.953  INFO 50291 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-09 13:35:57.018  INFO 50291 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-09 13:35:57.114  INFO 50291 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-12-09 13:35:57.369  INFO 50291 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-09 13:35:57.551  INFO 50291 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-12-09 13:35:57.799  INFO 50291 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-09 13:35:57.811  INFO 50291 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-09 13:35:58.052  WARN 50291 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-09 13:35:58.332  INFO 50291 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d105d03, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a541839, org.springframework.security.web.header.HeaderWriterFilter@656364d3, org.springframework.security.web.csrf.CsrfFilter@cc8c02d, org.springframework.security.web.authentication.logout.LogoutFilter@23533bc3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@13b8adea, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2c3fae06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@268074d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@658fd494, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@311904c, org.springframework.security.web.session.SessionManagementFilter@63660e0e, org.springframework.security.web.access.ExceptionTranslationFilter@5bc57254, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d9cafea]
+2022-12-09 13:35:58.523 DEBUG 50291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-12-09 13:35:58.619 DEBUG 50291 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2022-12-09 13:35:58.654 DEBUG 50291 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-12-09 13:35:58.666 DEBUG 50291 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-12-09 13:35:59.210  INFO 50291 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-09 13:35:59.262  INFO 50291 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-09 13:35:59.276  INFO 50291 --- [restartedMain] com.example.TaskApplication              : Started TaskApplication in 5.749 seconds (JVM running for 7.007)
+2022-12-09 13:36:03.682  INFO 50291 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-09 13:36:03.695  INFO 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-09 13:36:03.714 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-12-09 13:36:03.714 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-12-09 13:36:03.715 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-12-09 13:36:03.716 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e128b29
+2022-12-09 13:36:03.717 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5272ec96
+2022-12-09 13:36:03.717 DEBUG 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-12-09 13:36:03.717  INFO 50291 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-09 13:36:03.780 DEBUG 50291 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2022-12-09 13:36:03.788 DEBUG 50291 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.LoginController#login()
+2022-12-09 13:36:03.921 DEBUG 50291 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-12-09 13:36:04.442 DEBUG 50291 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-09 13:36:06.760 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST https://www.googleapis.com/oauth2/v4/token
+2022-12-09 13:36:06.761 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2022-12-09 13:36:06.763 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [{grant_type=[authorization_code], code=[4/0AfgeXvun_-GB_-KO_FvcOedocJPLaUqYPNwjDr8zsraICwltUkqUgzlVlHwb6FL2BZz0Dw], redirect_uri=[http://localhost:8080/login/oauth2/code/google]}] as "application/x-www-form-urlencoded;charset=UTF-8"
+2022-12-09 13:36:07.551 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2022-12-09 13:36:07.553 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [org.springframework.security.oauth2.core.endpoint.OAuth2AccessTokenResponse] as "application/json;charset=utf-8"
+2022-12-09 13:36:07.727 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://www.googleapis.com/oauth2/v3/certs
+2022-12-09 13:36:07.730 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2022-12-09 13:36:08.154 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2022-12-09 13:36:08.155 DEBUG 50291 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json;charset=UTF-8"
+2022-12-09 13:36:08.476 DEBUG 50291 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/top", parameters={}
+2022-12-09 13:36:08.477 DEBUG 50291 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controllers.TaskController#displayTop(OAuth2User, OAuth2AuthenticationToken, Model)
+2022-12-09 13:36:08.515 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==>  Preparing: INSERT INTO GoogleUser (userid, sort) VALUES (?, 'date') ON CONFLICT DO NOTHING
+2022-12-09 13:36:08.537 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-12-09 13:36:08.577 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.insertOneUser  : <==    Updates: 0
+2022-12-09 13:36:08.580 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==>  Preparing: SELECT sort FROM GoogleUser WHERE userid = ?
+2022-12-09 13:36:08.581 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-12-09 13:36:08.627 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.repository.UserMapper.selectSort     : <==      Total: 1
+2022-12-09 13:36:08.630 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==>  Preparing: SELECT * FROM Task WHERE done = false AND userID = ? ORDER BY CASE WHEN scheduledDate IS NULL THEN'2' WHEN scheduledDate = '' THEN '1' ELSE '0' END, scheduledDate ASC, startTime ASC
+2022-12-09 13:36:08.630 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : ==> Parameters: kounosu1771036@gmail.com(String)
+2022-12-09 13:36:08.647 DEBUG 50291 --- [http-nio-8080-exec-5] c.e.r.TaskMapper.selectUndoneTasks       : <==      Total: 0
+2022-12-09 13:36:08.664 DEBUG 50291 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-12-09 13:36:08.710 DEBUG 50291 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-09 13:36:08.730 DEBUG 50291 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2022-12-09 13:36:08.734 DEBUG 50291 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-09 13:36:08.744 DEBUG 50291 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-12-09 13:36:11.246 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-12-09 13:36:11.247 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-12-09 13:36:11.249 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-12-09 13:36:11.249 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-12-09 13:36:11.260 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-12-09 13:36:11.263 DEBUG 50291 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-12-09 13:36:11.275 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-12-09 13:36:11.276 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Dec 09 13:36:11 JST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-12-09 13:36:11.328 DEBUG 50291 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-12-09 15:55:20.740  WARN 50291 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h23s500ms).
+2022-12-09 18:41:02.668  WARN 50291 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h45m41s928ms).
+2022-12-09 20:07:11.195  WARN 50291 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h26m8s527ms).
+2022-12-09 20:51:01.926  INFO 50291 --- [RMI TCP Connection(72)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-09 20:51:01.955  INFO 50291 --- [RMI TCP Connection(72)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-09 20:51:01.960  INFO 50291 --- [RMI TCP Connection(72)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-09 20:51:01.964  INFO 50291 --- [RMI TCP Connection(72)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
