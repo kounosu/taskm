@@ -14,134 +14,116 @@ import com.example.model.Task;
 @Mapper
 public interface TaskMapper {
 
-	    
 	/**
 	 * select全件
+	 * 
 	 * @return
 	 */
 	@Select("SELECT * FROM Task")
 	List<Task> selectAllTasks();
-	
-	
+
 	/**
-	 * select undoneのみ scheduledDate順　
+	 * select undoneのみ scheduledDate順
+	 * 
 	 * @param userID
 	 * @return
 	 */
-	@Select("SELECT * FROM Task WHERE done = false AND userID = #{userID} ORDER BY " +
-	    "CASE " +
-	        "WHEN scheduledDate IS NULL THEN'2' " +//null最後
-	        "WHEN scheduledDate = '' THEN '1' " +//空文字最後
-	        "ELSE '0' " +
-	    "END, scheduledDate ASC, startTime ASC")
+	@Select("SELECT * FROM Task WHERE done = false AND userID = #{userID} ORDER BY " + "CASE "
+			+ "WHEN scheduledDate IS NULL THEN'2' " + // null最後
+			"WHEN scheduledDate = '' THEN '1' " + // 空文字最後
+			"ELSE '0' " + "END, scheduledDate ASC, startTime ASC")
 	List<Task> selectUndoneTasks(@Param("userID") String userID);
 
-
 	/**
-	 * select　undoneのみ　priority順
+	 * select undoneのみ priority順
+	 * 
 	 * @param userID
 	 * @return
 	 */
-	@Select("SELECT * FROM Task WHERE done = false AND userID = #{userID} ORDER BY " +
-	    "CASE " +
-	        "WHEN priority IS NULL THEN '2' " +//null最後
-	        "WHEN priority = '' THEN '1' " +//空文字最後
-	        "ELSE '0' " +
-	    "END, priority ASC, scheduledDate ASC")
+	@Select("SELECT * FROM Task WHERE done = false AND userID = #{userID} ORDER BY " + "CASE "
+			+ "WHEN priority IS NULL THEN '2' " + // null最後
+			"WHEN priority = '' THEN '1' " + // 空文字最後
+			"ELSE '0' " + "END, priority ASC, scheduledDate ASC")
 	List<Task> selectUndoneTasksByPriority(@Param("userID") String userID);
-
 
 	/**
 	 * select undone,todayのみ startTime順
+	 * 
 	 * @param userID
 	 * @return
 	 */
-	@Select("SELECT * FROM Task WHERE scheduledDate = to_char(CURRENT_DATE, 'YYYY-MM-DD') AND done = false AND userID = #{userID} ORDER BY " +
-	    "CASE " +
-	        "WHEN startTime IS NULL THEN '2' " +//null最後
-	        "WHEN startTime = '' THEN '1' " +//空文字最後
-	        "ELSE '0' " +
-	    "END, startTime ASC")
+	@Select("SELECT * FROM Task WHERE scheduledDate = to_char(CURRENT_DATE, 'YYYY-MM-DD') AND done = false AND userID = #{userID} ORDER BY "
+			+ "CASE " + "WHEN startTime IS NULL THEN '2' " + // null最後
+			"WHEN startTime = '' THEN '1' " + // 空文字最後
+			"ELSE '0' " + "END, startTime ASC")
 	List<Task> selectTodayTask(@Param("userID") String userID);
-	
-	
+
 	/**
 	 * select doneのみ
+	 * 
 	 * @param userID
 	 * @return
 	 */
 	@Select("SELECT * FROM Task WHERE done = true AND userID = #{userID} ORDER BY completionDate ASC")
 	List<Task> selectDoneTasks(@Param("userID") String userID);
-	
-	
+
 	/**
 	 * select1件
+	 * 
 	 * @param taskID
 	 * @return
 	 */
 	@Select("SELECT * FROM Task WHERE taskID = #{taskID}")
 	Task selectOne(int taskID);
-	
-	
+
 	/**
 	 * insert1件
+	 * 
 	 * @param task
 	 */
 	@Insert("INSERT INTO Task (userID, taskName, estimatedTime, scheduledDate, startTime) VALUES (#{userID}, #{taskName}, #{estimatedTime}, #{scheduledDate}, #{startTime})")
 	void insertOneTask(Task task);
-	
-	
+
 	/**
 	 * edit.htmlのタスク編集処理
+	 * 
 	 * @param task
 	 */
-	@Update("UPDATE Task SET "+
-	    "taskName = #{taskName}, "+
-	    "estimatedTime = #{estimatedTime}, "+
-	    "scheduledDate = #{scheduledDate}, "+
-	    "startTime = #{startTime}, "+
-	    "priority = #{priority} "+
-	    "WHERE taskID = #{taskID}")
+	@Update("UPDATE Task SET " + "taskName = #{taskName}, " + "estimatedTime = #{estimatedTime}, "
+			+ "scheduledDate = #{scheduledDate}, " + "startTime = #{startTime}, " + "priority = #{priority} "
+			+ "WHERE taskID = #{taskID}")
 	void updateOneTask(Task task);
-	
-	
+
 	/**
-	 * done処理
-	 * done→trueへ
-	 * completionDate→CURRENT_DATE
+	 * done処理 done→trueへ completionDate→CURRENT_DATE
+	 * 
 	 * @param taskID
 	 */
 	@Update("UPDATE Task SET done = true, completionDate = CURRENT_DATE WHERE taskID = #{taskID}")
 	void done(int taskID);
-	
-	
+
 	/**
-	 * undone処理
-	 * done→falseへ
-	 * comletionDate→null
+	 * undone処理 done→falseへ comletionDate→null
+	 * 
 	 * @param taskID
 	 */
 	@Update("UPDATE Task SET done = false, completionDate = null WHERE taskID = #{taskID}")
 	void undone(int taskID);
-	
-	
+
 	/**
 	 * DeleteTask処理
+	 * 
 	 * @param taskID
 	 */
 	@Delete("DELETE from Task WHERE taskID = #{taskID}")
 	void deleteTask(int taskID);
 
-
 	/**
-	 * DeleteAll処理①
-	 * ②はUserMapper.javaに記載
-	 * ログイン中のユーザーのTaskテーブルの情報を削除
+	 * DeleteAll処理① ②はUserMapper.javaに記載 ログイン中のユーザーのTaskテーブルの情報を削除
+	 * 
 	 * @param userID
 	 */
 	@Delete("DELETE from Task WHERE userID = #{userID}")
 	void deleteAll(@Param("userID") String userID);
-
-
 
 }
